@@ -67,7 +67,7 @@ function setup() {
     lastPos.y = mouseY;
     currentIndex++;
     started = true;
-  }, 4000);
+  }, 6000);
 }
 
 function draw() {
