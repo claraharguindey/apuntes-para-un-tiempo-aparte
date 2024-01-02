@@ -43,12 +43,14 @@ const updateImage = () => {
 };
 
 const updateContent = () => {
-  updateImage();
-  ephemeralText.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
-  apuntes.innerText += content[textCounter].text;
-  if (textCounter % 2 !== 0) {
-    textCounter++;
-  } else {
-    textCounter = 1;
+  if (started) {
+    updateImage();
+    ephemeralText.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
+    apuntes.innerText += content[textCounter].text;
+    if (textCounter % 2 !== 0) {
+      textCounter++;
+    } else {
+      textCounter = 1;
+    }
   }
 };

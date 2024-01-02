@@ -37,13 +37,14 @@ let started = false;
 
 function setup() {
   let canvas = createCanvas(windowWidth - 24, windowHeight - 24);
-  canvas.mousePressed(playOscillator);
+  if (started) {
+    canvas.mousePressed(playOscillator);
+  }
   osc = new p5.Oscillator("sine");
   currentPos.x = mouseX;
   currentPos.y = mouseY;
   dots.push(new Dot(408, 420));
   currentIndex++;
-
 
   setTimeout(() => {
     dots.push(new Dot(651, 448));
@@ -59,7 +60,7 @@ function setup() {
 
   setTimeout(() => {
     dots.push(new Dot(mouseX, mouseY));
-    ephemeral.innerHTML = `<p class="ephemeralText">en un tiempo aparte</p>`;
+    ephemeral.innerHTML = `<p class="ephemeralText">en un tiempo aparte.</p>`;
     currentPos.x = mouseX;
     currentPos.y = mouseY;
     lastPos.x = mouseX;
