@@ -16,20 +16,17 @@
         <h1>Apuntes para un tiempo aparte</h1>
         <nav>
             <ul>
-                <li class="list-item"><button>Reiniciar</button></li>
+                <li class="list-item"><button onclick="restart()">Reiniciar</button></li>
                 <li class="list-item"><a href="/pages/list.html">Figuras</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main onclick="updateContent()">
+        <div id="ephemeral"></div>
         <div class="content">
-            <img src="/assets/media/hands/1.png" alt="figure1">
+            <img src="/assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
             <div class="marquee">
-                <p>el delirio de querer vivir muchos ritmos en una sola vida
-                    viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida,
-                    dentro y fuera del tiempo
-                    hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la
-                    cronodiversidad constitutiva de los seres</p>
+                <p id="apuntes"></p>
             </div>
         </div>
     </main>
