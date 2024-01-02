@@ -33,7 +33,7 @@ let handsCounter = 1;
 let textCounter = 1;
 
 const updateImage = () => {
-  catscraddle.src = `/assets/media/hands/${[handsCounter]}.png`;
+  catscraddle.src = `./../assets/media/hands/${[handsCounter]}.png`;
 
   if (handsCounter % 2 !== 0) {
     handsCounter++;
