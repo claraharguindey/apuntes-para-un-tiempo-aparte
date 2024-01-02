@@ -99,6 +99,19 @@ img {
     cursor: wait;
   }
 }
+ 
+table {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.table-image {
+    height: 80px;
+}
+
+.table-image-cell {
+    width: 25%;
+}
 
 @keyframes fadeOut {
   0% {
