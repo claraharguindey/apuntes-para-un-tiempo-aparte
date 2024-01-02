@@ -1,6 +1,6 @@
 const catscraddle = document.getElementById("catscraddle");
 const apuntes = document.getElementById("apuntes");
-const ephemeral = document.getElementById("ephemeral");
+const ephemeralText = document.getElementById("ephemeral");
 
 const content = [
   {
@@ -43,10 +43,8 @@ const updateImage = () => {
 };
 
 const updateContent = () => {
-  ephemeral.innerText = "";
-  console.log(content[textCounter].text);
   updateImage();
-  ephemeral.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
+  ephemeralText.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
   apuntes.innerText += content[textCounter].text;
   if (textCounter % 2 !== 0) {
     textCounter++;

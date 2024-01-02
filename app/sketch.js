@@ -1,6 +1,6 @@
 let dots = [];
 let currentIndex = 0;
-
+const ephemeral = document.getElementById("ephemeral");
 let lastPos = { x: 0, y: 0 };
 let currentPos = { x: 0, y: 0 };
 let dotSize = 8;
@@ -45,16 +45,20 @@ function setup() {
 
   setTimeout(() => {
     dots.push(new Dot(651, 448));
+    ephemeral.innerHTML = `<p class="ephemeralText">Esta constelación recupera momentos</p>`;
     currentIndex++;
   }, 1000);
 
   setTimeout(() => {
     dots.push(new Dot(710, 712));
+    ephemeral.innerHTML = `<p class="ephemeralText">que ocurrieron u ocurrirán</p>`;
     currentIndex++;
   }, 2000);
 
   setTimeout(() => {
     dots.push(new Dot(mouseX, mouseY));
+    ephemeral.innerHTML = `<p class="ephemeralText">en un tiempo aparte</p>`;
+
     currentPos.x = mouseX;
     currentPos.y = mouseY;
     lastPos.x = mouseX;
