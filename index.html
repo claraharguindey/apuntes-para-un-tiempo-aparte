@@ -10,7 +10,7 @@
     <title>Apuntes para un tiempo aparte</title>
 </head>
 
-<body>
+<body onmousewheel="moveDiv()">
     <header>
         <h1>Apuntes para un tiempo aparte</h1>
         <nav>
@@ -21,11 +21,11 @@
         </nav>
     </header>
     <main onclick="updateContent()">
-        <div id="ephemeral"></div>
+        <div id="ephemeral" class="ephemeralWrapper"></div>
         <div class="content">
             <img src="./assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
-            <div class="marquee">
-                <p id="apuntes"></p>
+            <div>
+                <p id="apuntes" class="apuntes" ></p>
             </div>
         </div>
     </main>
