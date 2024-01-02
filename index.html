@@ -4,9 +4,8 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
-    <script src="path/to/p5.sound.js"></script>
-    <link rel="stylesheet" type="text/css" href="fonts.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./fonts.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <meta charset="utf-8" />
     <title>Apuntes para un tiempo aparte</title>
 </head>
@@ -17,22 +16,22 @@
         <nav>
             <ul>
                 <li class="list-item"><button onclick="restart()">Reiniciar</button></li>
-                <li class="list-item"><a href="/pages/list.html">Figuras</a></li>
+                <li class="list-item"><a href="./pages/list.html">Figuras</a></li>
             </ul>
         </nav>
     </header>
     <main onclick="updateContent()">
         <div id="ephemeral"></div>
         <div class="content">
-            <img src="/assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
+            <img src="./assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
             <div class="marquee">
                 <p id="apuntes"></p>
             </div>
         </div>
     </main>
 
-    <script src="/app/sketch.js"></script>
-    <script src="/app/index.js"></script>
+    <script src="./app/sketch.js"></script>
+    <script src="./app/index.js"></script>
 </body>
 
 </html>
