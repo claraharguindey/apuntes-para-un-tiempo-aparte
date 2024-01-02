@@ -44,5 +44,5 @@ const content = [
 
 table.innerHTML =  content.map(
   (item) =>
-    `<tr><td class="table-image-cell"><img src='/assets/media/hands/${item.figure}.png' alt='hands playing catscraddle' class="table-image"></td><td>${item.ref}</td></tr>`
+    `<tr><td class="table-image-cell"><img src='./../assets/media/hands/${item.figure}.png' alt='hands playing catscraddle' class="table-image"></td><td>${item.ref}</td></tr>`
 ).join("");
