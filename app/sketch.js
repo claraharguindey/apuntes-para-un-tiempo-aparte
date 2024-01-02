@@ -38,7 +38,7 @@ class Dot {
 let monoSynth;
 // Función de configuración al inicio del programa
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(windowWidth - 24, windowHeight - 24);
   canvas.mousePressed(playOscillator);
   osc = new p5.Oscillator("sine");
 }
