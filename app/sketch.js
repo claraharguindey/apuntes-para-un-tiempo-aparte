@@ -18,13 +18,13 @@ class Dot {
   // Método para conectar un punto con otro
   connect(px, py) {
     stroke(255, 255, 255);
-    drawingContext.setLineDash([2,5]);
+    drawingContext.setLineDash([2, 5]);
     line(this.x, this.y, px, py);
   }
   // Método para dibujar un punto
   plot() {
     strokeWeight(1);
-    drawingContext.setLineDash([0,0]);
+    drawingContext.setLineDash([0, 0]);
     ellipse(this.x, this.y, dotSize);
   }
   // Método para verificar si un punto está dentro de ciertas coordenadas
@@ -36,12 +36,37 @@ class Dot {
 }
 
 let monoSynth;
+let started = false;
 // Función de configuración al inicio del programa
 function setup() {
   let canvas = createCanvas(windowWidth - 24, windowHeight - 24);
   canvas.mousePressed(playOscillator);
   osc = new p5.Oscillator("sine");
+
+  dots.push(new Dot(random(width), random(height)));
+  currentIndex++;
+
+  setTimeout(() => {
+    dots.push(new Dot(random(width), random(height)));
+    currentIndex++;
+  }, 1000);
+
+  setTimeout(() => {
+    dots.push(new Dot(random(width), random(height)));
+    currentIndex++;
+  }, 2000);
+
+  setTimeout(() => {
+    dots.push(new Dot(mouseX, mouseY));
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+    lastPos.x = mouseX;
+    lastPos.y = mouseY;
+    currentIndex++;
+    started = true;
+  }, 4000);
 }
+
 // Función de dibujo
 function draw() {
   background(0, 0, 0);
@@ -68,7 +93,7 @@ function draw() {
   } else {
     stroke(255, 255, 255);
     strokeWeight(1);
-    drawingContext.setLineDash([2,5]);
+    drawingContext.setLineDash([2, 5]);
     line(lastPos.x, lastPos.y, currentPos.x, currentPos.y);
   }
 }
@@ -78,8 +103,10 @@ function windowResized() {
 }
 
 function mouseMoved() {
-  currentPos.x = mouseX;
-  currentPos.y = mouseY;
+  if (started) {
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+  }
 }
 
 function playOscillator() {
@@ -90,13 +117,15 @@ function playOscillator() {
 }
 
 function mouseReleased() {
-  osc.amp(0, 0.5);
-  currentPos.x = mouseX;
-  currentPos.y = mouseY;
-  // Creación de un nuevo punto en las coordenadas actuales del mouse
-  dots.push(new Dot(mouseX, mouseY));
-  currentIndex++;
-  lastPos.x = mouseX;
-  lastPos.y = mouseY;
-  playing = false;
+  if (started) {
+    osc.amp(0, 0.5);
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+    // Creación de un nuevo punto en las coordenadas actuales del mouse
+    dots.push(new Dot(mouseX, mouseY));
+    currentIndex++;
+    lastPos.x = mouseX;
+    lastPos.y = mouseY;
+    playing = false;
+  }
 }
