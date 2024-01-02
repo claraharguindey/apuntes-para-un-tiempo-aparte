@@ -1,11 +1,11 @@
 @font-face {
   font-family: apuntes;
-  src: url("/assets/fonts/apuntes-regular.woff");
+  src: url("./assets/fonts/apuntes-regular.woff");
   font-weight: regular;
 }
 
 @font-face {
   font-family: apuntes-italic;
-  src: url("/assets/fonts/apuntes-italic.woff");
+  src: url("./assets/fonts/apuntes-italic.woff");
   font-weight: italic;
 }
