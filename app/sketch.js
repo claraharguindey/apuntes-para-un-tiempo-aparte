@@ -143,7 +143,7 @@ const playIntro = () => {
 
   setTimeout(() => {
     dots.push(new Dot(715, 428));
-    intro.innerHTML = `<p class="introText">De forma aleatoria e infinita</p>`;
+    intro.innerHTML = `<p class="introText">De forma colectiva e infinita</p>`;
     catscraddle.src = `./assets/media/intro/4.jpeg`;
 
     currentIndex++;
@@ -151,7 +151,7 @@ const playIntro = () => {
 
   setTimeout(() => {
     dots.push(new Dot(830, 376));
-    intro.innerHTML = `<p class="introText">dibujamos colectivamente</p>`;
+    intro.innerHTML = `<p class="introText">dibujamos una línea del tiempo</p>`;
     catscraddle.src = `./assets/media/intro/5.jpeg`;
 
     currentIndex++;
@@ -159,29 +159,21 @@ const playIntro = () => {
 
   setTimeout(() => {
     dots.push(new Dot(851, 400));
-    intro.innerHTML = `<p class="introText">una posible línea del tiempo</p>`;
+    intro.innerHTML = `<p class="introText">que se ha vuelto constelación</p>`;
     catscraddle.src = `./assets/media/intro/6.jpeg`;
-
     currentIndex++;
   }, 15000);
 
   setTimeout(() => {
-    dots.push(new Dot(865, 474));
-    intro.innerHTML = `<p class="introText">que se ha vuelto constelación.</p>`;
+    dots.push(new Dot(715, 428));
+    intro.innerHTML = `<p class="introText">para pensar y rehacer</p>`;
     catscraddle.src = `./assets/media/intro/7.jpeg`;
     currentIndex++;
   }, 18000);
 
   setTimeout(() => {
-    dots.push(new Dot(715, 428));
-    intro.innerHTML = `<p class="introText">para pensar y rehacer</p>`;
-    catscraddle.src = `./assets/media/intro/8.jpeg`;
-    currentIndex++;
-  }, 21000);
-
-  setTimeout(() => {
     dots.push(new Dot(mouseX, mouseY));
-    intro.innerHTML = `<p class="introText"> Apuntes para un tiempo aparte.</p>`;
+    intro.innerHTML = `<p class="introText">Apuntes para un tiempo aparte.</p>`;
     catscraddle.src = `./assets/media/intro/1.jpeg`;
     currentPos.x = mouseX;
     currentPos.y = mouseY;
@@ -190,5 +182,5 @@ const playIntro = () => {
     currentIndex++;
     started = true;
     sessionStorage.setItem('introPlayed', true);
-  }, 24000);
+  }, 21000);
 };
