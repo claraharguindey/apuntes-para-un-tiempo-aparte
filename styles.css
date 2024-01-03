@@ -39,7 +39,7 @@ header {
   right: 24px;
   display: flex;
   justify-content: space-between;
-  animation: fadeIn 24s linear forwards;
+  animation: fadeIn 26s linear forwards;
 }
 
 h1 {
@@ -126,7 +126,7 @@ a {
   border: 1px solid white;
   border-bottom: 0;
   margin-top: 98vh;
-  animation: fadeIn 30s linear forwards;
+  animation: fadeIn 28s linear forwards;
 }
 
 .hidden {
