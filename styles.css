@@ -74,16 +74,18 @@ ul {
   text-decoration: underline;
   list-style: none;
 }
+a img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
 
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 40px;
-  bottom: 24px;
+.footer {
   position: fixed;
-  right: 24px;
+  z-index: 1;
+  bottom: 24px;
   left: 24px;
+  right: 24px;
 }
 
 .ephemeralWrapper,
