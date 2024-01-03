@@ -108,7 +108,6 @@ function mouseReleased() {
     osc.amp(0, 0.5);
     currentPos.x = mouseX;
     currentPos.y = mouseY;
-    console.log({ mouseX, mouseY });
     dots.push(new Dot(mouseX, mouseY));
     currentIndex++;
     lastPos.x = mouseX;

@@ -1,29 +1,32 @@
 const catscraddle = document.getElementById("catscraddle");
 const apuntes = document.getElementById("apuntes");
 const ephemeralText = document.getElementById("ephemeral");
+const figuresLink = document.getElementById("figuresLink");
 
-let handsCounter = 1;
-let textCounter = 1;
-
-const updateImage = () => {
-  catscraddle.src = `./assets/media/hands/${handsCounter}.jpeg`;
-
-  if (handsCounter % 19 !== 0) {
-    handsCounter++;
-  } else {
-    handsCounter = 1;
+let counter = 1;
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
   }
+  return newArray;
 };
+
+const shuffledContent = shuffleArray(content);
 
 const updateContent = () => {
   if (started) {
-    updateImage();
-    ephemeralText.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
-    apuntes.innerText += ` ${content[textCounter].text}`;
-    if (textCounter % 19 !== 0) {
-      textCounter++;
+    ephemeralText.innerHTML = `<p class="ephemeralText">${shuffledContent[counter].text}</p>`;
+    catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
+    apuntes.innerText += ` ${shuffledContent[counter].text}`;
+    console.log(shuffledContent[counter].figure)
+    figuresLink.href = `./pages/list.html#${shuffledContent[counter].id}`;
+
+    if (counter % shuffledContent.length !== 0) {
+      counter++;
     } else {
-      textCounter = 1;
+      counter = 1;
     }
   }
 };

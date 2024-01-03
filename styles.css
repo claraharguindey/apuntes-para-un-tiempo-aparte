@@ -55,8 +55,7 @@ ul {
   gap: 12px;
 }
 
-button,
-a {
+.list-item-link {
   font-family: "apuntes";
   text-decoration: underline;
   font-size: 24px;

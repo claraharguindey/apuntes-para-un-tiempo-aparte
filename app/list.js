@@ -16,6 +16,6 @@ const filtered = content
 table.innerHTML = filtered
   .map(
     (item) =>
-      `<tr><td class="table-image-cell"><img src='./../assets/media/hands/${item.figure}.jpeg' alt='hands playing catscraddle' class="table-image"></td><td class="table-author">${item.author}</td> <td>${item.title}</td></tr>`
+      `<tr ><td class="table-image-cell"><img src='./../assets/media/hands/${item.figure}.jpeg' alt='hands playing catscraddle' class="table-image"></td><td class="table-author"><a id=${item.id}>${item.author}</a></td> <td>${item.title}</td></tr>`
   )
   .join("");
