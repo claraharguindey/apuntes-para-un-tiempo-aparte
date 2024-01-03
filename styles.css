@@ -17,7 +17,6 @@
 
 body {
   margin: 0;
-  /* padding: 24px; */
   font-family: "apuntes";
   background-color: #000000;
   font-size: 24px;
@@ -40,6 +39,7 @@ header {
   right: 24px;
   display: flex;
   justify-content: space-between;
+  animation: fadeIn 24s linear forwards;
 }
 
 h1 {
@@ -84,10 +84,19 @@ a {
   left: 24px;
 }
 
-.ephemeralWrapper {
+.ephemeralWrapper,
+.intro {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.introText {
+  font-size: 24px;
+  text-decoration: underline;
+  position: fixed;
+  top: 56px;
+  animation: fadeOut 5s linear forwards;
 }
 
 .ephemeralText {
@@ -112,12 +121,20 @@ a {
   border-radius: 50px 50px 0 0;
   font-size: 16px;
   max-width: 100vw;
-
   background: black;
   padding: 18px 24px;
   border: 1px solid white;
   border-bottom: 0;
   margin-top: 98vh;
+  animation: fadeIn 30s linear forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  animation: fadeIn 60s linear forwards;
 }
 
 .apuntes {
@@ -147,6 +164,7 @@ table {
 .table-author {
   width: 25%;
 }
+
 tr {
   border-bottom: 1px solid white;
 }
@@ -155,10 +173,22 @@ tr {
   0% {
     opacity: 1;
   }
-  99% {
+  95% {
     opacity: 0.01;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
   }
 }

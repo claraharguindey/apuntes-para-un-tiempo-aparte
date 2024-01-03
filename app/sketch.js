@@ -1,6 +1,6 @@
 let dots = [];
 let currentIndex = 0;
-const ephemeral = document.getElementById("ephemeral");
+const intro = document.getElementById("intro");
 let lastPos = { x: 0, y: 0 };
 let currentPos = { x: 0, y: 0 };
 let dotSize = 8;
@@ -43,31 +43,75 @@ function setup() {
   osc = new p5.Oscillator("sine");
   currentPos.x = mouseX;
   currentPos.y = mouseY;
-  dots.push(new Dot(408, 420));
+  dots.push(new Dot(308, 332));
+  intro.innerHTML = `<p class="introText">Aquí recogemos momentos</p>`;
+  catscraddle.src = `./assets/media/intro/1.jpeg`;
   currentIndex++;
 
   setTimeout(() => {
-    dots.push(new Dot(651, 448));
-    ephemeral.innerHTML = `<p class="ephemeralText">Esta constelación recupera momentos</p>`;
-    currentIndex++;
-  }, 1000);
-
-  setTimeout(() => {
-    dots.push(new Dot(710, 712));
-    ephemeral.innerHTML = `<p class="ephemeralText">que ocurrieron u ocurrirán</p>`;
+    dots.push(new Dot(426, 415));
+    intro.innerHTML = `<p class="introText">que tuvieron lugar</p>`;
+    catscraddle.src = `./assets/media/intro/2.jpeg`;
     currentIndex++;
   }, 3000);
 
   setTimeout(() => {
+    dots.push(new Dot(622, 371));
+    intro.innerHTML = `<p class="introText">en un tiempo aparte.</p>`;
+    catscraddle.src = `./assets/media/intro/3.jpeg`;
+
+    currentIndex++;
+  }, 6000);
+
+  setTimeout(() => {
+    dots.push(new Dot(715, 428));
+    intro.innerHTML = `<p class="introText">De forma aleatoria e infinita</p>`;
+    catscraddle.src = `./assets/media/intro/4.jpeg`;
+
+    currentIndex++;
+  }, 9000);
+
+  setTimeout(() => {
+    dots.push(new Dot(830, 376));
+    intro.innerHTML = `<p class="introText">dibujamos colectivamente</p>`;
+    catscraddle.src = `./assets/media/intro/5.jpeg`;
+
+    currentIndex++;
+  }, 12000);
+
+  setTimeout(() => {
+    dots.push(new Dot(851, 400));
+    intro.innerHTML = `<p class="introText">una posible línea del tiempo</p>`;
+    catscraddle.src = `./assets/media/intro/6.jpeg`;
+
+    currentIndex++;
+  }, 15000);
+
+  setTimeout(() => {
+    dots.push(new Dot(865, 474));
+    intro.innerHTML = `<p class="introText">que se ha vuelto constelación.</p>`;
+    catscraddle.src = `./assets/media/intro/7.jpeg`;
+    currentIndex++;
+  }, 18000);
+
+  setTimeout(() => {
+    dots.push(new Dot(715, 428));
+    intro.innerHTML = `<p class="introText">para pensar y rehacer</p>`;
+    catscraddle.src = `./assets/media/intro/8.jpeg`;
+    currentIndex++;
+  }, 21000);
+
+  setTimeout(() => {
     dots.push(new Dot(mouseX, mouseY));
-    ephemeral.innerHTML = `<p class="ephemeralText">en un tiempo aparte.</p>`;
+    intro.innerHTML = `<p class="introText"> Apuntes para un tiempo aparte.</p>`;
+    catscraddle.src = `./assets/media/intro/1.jpeg`;
     currentPos.x = mouseX;
     currentPos.y = mouseY;
     lastPos.x = mouseX;
     lastPos.y = mouseY;
     currentIndex++;
     started = true;
-  }, 6000);
+  }, 24000);
 }
 
 function draw() {
@@ -119,6 +163,7 @@ function mouseReleased() {
     osc.amp(0, 0.5);
     currentPos.x = mouseX;
     currentPos.y = mouseY;
+    console.log({mouseX, mouseY})
     dots.push(new Dot(mouseX, mouseY));
     currentIndex++;
     lastPos.x = mouseX;
