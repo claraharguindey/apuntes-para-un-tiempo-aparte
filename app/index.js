@@ -5,27 +5,27 @@ const ephemeralText = document.getElementById("ephemeral");
 const content = [
   {
     figure: 1,
-    text: "El delirio de querer vivir muchos ritmos en una sola vida.",
+    text: "El delirio de querer vivir muchos ritmos en una sola vida...",
     ref: "Instituto del Tiempo Suspendido",
   },
   {
     figure: 1,
-    text: "Viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo.",
+    text: "Viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo...",
     ref: "Instituto del Tiempo Suspendido",
   },
   {
     figure: 1,
-    text: "Hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres.",
+    text: "Hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres...",
     ref: "Instituto del Tiempo Suspendido",
   },
   {
     figure: 1,
-    text: "Un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita.",
+    text: "Un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita...",
     ref: "Instituto del Tiempo Suspendido",
   },
   {
     figure: 1,
-    text: "Somos, cada cual, tiempos.",
+    text: "Somos, cada cual, tiempos...",
     ref: "Instituto del Tiempo Suspendido",
   },
 ];

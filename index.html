@@ -10,7 +10,7 @@
     <title>Apuntes para un tiempo aparte</title>
 </head>
 
-<body onmousewheel="moveDiv()">
+<body onclick="updateContent()">
     <header>
         <h1>Apuntes para un tiempo aparte</h1>
         <nav>
@@ -20,16 +20,18 @@
             </ul>
         </nav>
     </header>
-    <main onclick="updateContent()">
-        <div id="ephemeral" class="ephemeralWrapper"></div>
-        <div class="content">
-            <img src="./assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
-            <div>
-                <p id="apuntes" class="apuntes" ></p>
+    <div class="parallax">
+        <main class="main">
+            <div id="ephemeral" class="ephemeralWrapper"></div>
+            <div class="content">
+                <img src="./assets/media/hands/1.png" alt="hands playing catscraddle" id="catscraddle">
             </div>
+        </main>
+    </div>
+    <div class="apuntesWrapper">
+        <div class="apuntes" id="apuntes">
         </div>
-    </main>
-
+    </div>
     <script src="./app/sketch.js"></script>
     <script src="./app/index.js"></script>
 </body>

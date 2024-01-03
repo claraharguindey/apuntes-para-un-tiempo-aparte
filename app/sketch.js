@@ -36,7 +36,7 @@ let monoSynth;
 let started = false;
 
 function setup() {
-  let canvas = createCanvas(windowWidth - 24, windowHeight - 24);
+  let canvas = createCanvas(windowWidth, windowHeight);
   if (started) {
     canvas.mousePressed(playOscillator);
   }
