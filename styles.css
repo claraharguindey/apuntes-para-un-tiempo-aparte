@@ -39,6 +39,9 @@ header {
   right: 24px;
   display: flex;
   justify-content: space-between;
+}
+
+.fadeIn {
   animation: fadeIn 26s linear forwards;
 }
 
