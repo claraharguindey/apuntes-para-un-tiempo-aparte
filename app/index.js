@@ -46,7 +46,7 @@ const updateContent = () => {
   if (started) {
     updateImage();
     ephemeralText.innerHTML = `<p class="ephemeralText">${content[textCounter].text}</p>`;
-    apuntes.innerText += content[textCounter].text;
+    apuntes.innerText += ` ${content[textCounter].text}`;
     if (textCounter % 2 !== 0) {
       textCounter++;
     } else {
