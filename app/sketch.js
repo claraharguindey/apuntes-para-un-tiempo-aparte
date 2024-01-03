@@ -44,6 +44,84 @@ function setup() {
   currentPos.x = mouseX;
   currentPos.y = mouseY;
   dots.push(new Dot(308, 332));
+  const introPlayed = sessionStorage.getItem("introPlayed");
+  console.log({introPlayed})
+  if (introPlayed === "true") {
+    dots.push(new Dot(mouseX, mouseY));
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+    lastPos.x = mouseX;
+    lastPos.y = mouseY;
+    currentIndex++;
+    started = true;
+  } else {
+    playIntro();
+  }
+}
+
+function draw() {
+  background(0, 0, 0);
+  freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
+  amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
+  if (playing) {
+    osc.freq(freq, 0.1);
+    osc.amp(amp, 0.1);
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].plot();
+    if (i > 0) {
+      dots[i].connect(dots[i - 1].x, dots[i - 1].y);
+    }
+  }
+  if (currentIndex == 0) {
+    fill(255, 255, 255);
+    stroke(255, 255, 255);
+    textSize(24);
+  } else {
+    stroke(255, 255, 255);
+    strokeWeight(1);
+    drawingContext.setLineDash([2, 5]);
+    line(lastPos.x, lastPos.y, currentPos.x, currentPos.y);
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function mouseMoved() {
+  if (started) {
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+  }
+}
+
+function playOscillator() {
+  currentPos.x = mouseX;
+  currentPos.y = mouseY;
+  osc.start();
+  playing = true;
+}
+
+function mouseReleased() {
+  if (started) {
+    osc.amp(0, 0.5);
+    currentPos.x = mouseX;
+    currentPos.y = mouseY;
+    console.log({ mouseX, mouseY });
+    dots.push(new Dot(mouseX, mouseY));
+    currentIndex++;
+    lastPos.x = mouseX;
+    lastPos.y = mouseY;
+    playing = false;
+  }
+}
+
+const restart = () => {
+  dots = [];
+};
+
+const playIntro = () => {
   intro.innerHTML = `<p class="introText">Aquí recogemos momentos</p>`;
   catscraddle.src = `./assets/media/intro/1.jpeg`;
   currentIndex++;
@@ -111,67 +189,6 @@ function setup() {
     lastPos.y = mouseY;
     currentIndex++;
     started = true;
+    sessionStorage.setItem('introPlayed', true);
   }, 24000);
-}
-
-function draw() {
-  background(0, 0, 0);
-  freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
-  amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
-  if (playing) {
-    osc.freq(freq, 0.1);
-    osc.amp(amp, 0.1);
-  }
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].plot();
-    if (i > 0) {
-      dots[i].connect(dots[i - 1].x, dots[i - 1].y);
-    }
-  }
-  if (currentIndex == 0) {
-    fill(255, 255, 255);
-    stroke(255, 255, 255);
-    textSize(24);
-  } else {
-    stroke(255, 255, 255);
-    strokeWeight(1);
-    drawingContext.setLineDash([2, 5]);
-    line(lastPos.x, lastPos.y, currentPos.x, currentPos.y);
-  }
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-function mouseMoved() {
-  if (started) {
-    currentPos.x = mouseX;
-    currentPos.y = mouseY;
-  }
-}
-
-function playOscillator() {
-  currentPos.x = mouseX;
-  currentPos.y = mouseY;
-  osc.start();
-  playing = true;
-}
-
-function mouseReleased() {
-  if (started) {
-    osc.amp(0, 0.5);
-    currentPos.x = mouseX;
-    currentPos.y = mouseY;
-    console.log({mouseX, mouseY})
-    dots.push(new Dot(mouseX, mouseY));
-    currentIndex++;
-    lastPos.x = mouseX;
-    lastPos.y = mouseY;
-    playing = false;
-  }
-}
-
-const restart = () => {
-  dots = [];
 };
