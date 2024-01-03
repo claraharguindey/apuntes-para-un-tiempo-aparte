@@ -127,8 +127,8 @@ a {
   padding: 18px 24px;
   border: 1px solid white;
   border-bottom: 0;
-  margin-top: 98vh;
-  animation: fadeIn 28s linear forwards;
+  animation: fadeInScrollDown 28s linear forwards;
+  margin-top: 96vh;
 }
 
 .hidden {
@@ -192,5 +192,20 @@ tr {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInScrollDown {
+  0% {
+    opacity: 0;
+    margin-top: 90vh;
+  }
+  95% {
+    opacity: 0.01;
+    margin-top: 96vh;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 98vh;
   }
 }

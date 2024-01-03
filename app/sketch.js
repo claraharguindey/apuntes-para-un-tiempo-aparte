@@ -1,6 +1,8 @@
 let dots = [];
 let currentIndex = 0;
 const intro = document.getElementById("intro");
+const header = document.getElementById("header");
+const apuntesWrapper = document.getElementById("apuntesWrapper");
 let lastPos = { x: 0, y: 0 };
 let currentPos = { x: 0, y: 0 };
 let dotSize = 8;
@@ -45,15 +47,13 @@ function setup() {
   currentPos.y = mouseY;
   dots.push(new Dot(308, 332));
   const introPlayed = sessionStorage.getItem("introPlayed");
-  console.log({introPlayed})
   if (introPlayed === "true") {
-    dots.push(new Dot(mouseX, mouseY));
-    currentPos.x = mouseX;
-    currentPos.y = mouseY;
-    lastPos.x = mouseX;
-    lastPos.y = mouseY;
+    lastPos.x = 308;
+    lastPos.y = 332;
     currentIndex++;
     started = true;
+    apuntesWrapper.style.animation = "none";
+    header.style.animation = "none";
   } else {
     playIntro();
   }
