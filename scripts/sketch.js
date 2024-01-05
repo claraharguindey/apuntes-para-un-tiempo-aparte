@@ -7,7 +7,7 @@ let lastPos = { x: 0, y: 0 };
 let currentPos = { x: 0, y: 0 };
 let dotSize = 8;
 
-let osc, playing, freq, amp;
+let freq, amp;
 
 class Dot {
   constructor(x, y) {
@@ -42,7 +42,6 @@ function setup() {
   if (started) {
     canvas.mousePressed(playOscillator);
   }
-  osc = new p5.Oscillator("sine");
   currentPos.x = mouseX;
   currentPos.y = mouseY;
   dots.push(new Dot(308, 332));
@@ -63,10 +62,7 @@ function draw() {
   background(0, 0, 0);
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
-  if (playing) {
-    osc.freq(freq, 0.1);
-    osc.amp(amp, 0.1);
-  }
+
   for (let i = 0; i < dots.length; i++) {
     dots[i].plot();
     if (i > 0) {
@@ -99,20 +95,16 @@ function mouseMoved() {
 function playOscillator() {
   currentPos.x = mouseX;
   currentPos.y = mouseY;
-  osc.start();
-  playing = true;
 }
 
 function mouseReleased() {
   if (started) {
-    osc.amp(0, 0.5);
     currentPos.x = mouseX;
     currentPos.y = mouseY;
     dots.push(new Dot(mouseX, mouseY));
     currentIndex++;
     lastPos.x = mouseX;
     lastPos.y = mouseY;
-    playing = false;
   }
 }
 

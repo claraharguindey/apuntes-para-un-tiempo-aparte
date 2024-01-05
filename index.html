@@ -12,7 +12,8 @@
 
 <body onclick="updateContent()">
     <header id="header" class="fadeIn">
-        <h1>Apuntes para un tiempo aparte</h1>
+        <h1><a href="https://www.museoreinasofia.es/actividades/apuntes-tiempo-aparte" target="_blank"
+                rel="noopener noreferrer">Apuntes para un tiempo aparte</a></h1>
         <nav>
             <ul>
                 <li class="list-item"><button onclick="restart()" class="list-item-link">Reiniciar</button></li>
@@ -24,18 +25,16 @@
         <div id="ephemeral" class="ephemeralWrapper"></div>
         <div id="intro" class="intro"></div>
     </main>
-    <footer class="footer">
-        <a href="./pages/list.html" id="figuresLink">
-            <img src="./assets/media/hands/1.jpeg" alt="hands playing catscraddle" id="catscraddle" class="home-hands">
-        </a>
-    </footer>
+    <a href="./pages/list.html" id="figuresLink" class="figure-link">
+        <img src="./assets/media/hands/1.jpeg" alt="hands playing catscraddle" id="catscraddle" class="home-hands">
+    </a>
     <div class="apuntesWrapper" id="apuntesWrapper">
         <div class="apuntes" id="apuntes">
         </div>
     </div>
-    <script src="./app/data.js"></script>
-    <script src="./app/sketch.js"></script>
-    <script src="./app/index.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/sketch.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
