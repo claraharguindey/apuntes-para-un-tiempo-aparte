@@ -2,8 +2,8 @@ const catscraddle = document.getElementById("catscraddle");
 const apuntes = document.getElementById("apuntes");
 const ephemeralText = document.getElementById("ephemeral");
 const figuresLink = document.getElementById("figuresLink");
-
 let counter = 1;
+
 const shuffleArray = (array) => {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {

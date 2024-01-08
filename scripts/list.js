@@ -10,6 +10,7 @@ const filtered = content
     if (a.author > b.author) {
       return 1;
     }
+    
     return 0;
   });
 
