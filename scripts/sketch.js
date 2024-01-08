@@ -172,10 +172,20 @@ const playIntro = () => {
       currentIndex++;
 
       if (step.customPosition) {
-        dots.push(new Dot(mouseX, mouseY));
+        if (mouseX === 0 && mouseY === 0) {
+          dots.push(new Dot(750, 600));
+        } else {
+          dots.push(new Dot(mouseX, mouseY));
+        }
         setPosition();
-        lastPos.x = mouseX;
-        lastPos.y = mouseY;
+        if (mouseX === 0 && mouseY === 0) {
+          lastPos.x = 750;
+          lastPos.y = 600;
+        } else {
+          lastPos.x = mouseX;
+          lastPos.y = mouseY;
+        }
+       
         started = true;
         sessionStorage.setItem("introPlayed", true);
       }
