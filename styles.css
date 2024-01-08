@@ -177,6 +177,10 @@ tr {
   border-bottom: 1px solid white;
 }
 
+#arrow {
+  display: none;
+}
+
 .scroll-down {
   position: absolute;
   left: 50%;
