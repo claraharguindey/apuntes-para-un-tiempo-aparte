@@ -17,7 +17,7 @@ const filtered = content
   });
 
 const displayFullText = (id) => {
-  document.getElementById(`${id}Text`).classList.toggle("tbl-accordion-body");
+  document.getElementById(`${id}Text`).classList.toggle("table-accordion-body");
   document.getElementById(`${id}Row`).classList.toggle("openRow");
   console.log(document.getElementById(`${id}button`))
   document.getElementById(`${id}button`).innerText =
@@ -49,7 +49,7 @@ table.innerHTML = filtered
       </tbody>
       ${
         item.fullText
-          ? `<tbody class="tbl-accordion-body" id="${item.id}Text">
+          ? `<tbody class="table-accordion-body" id="${item.id}Text">
           <tr>
             <td colspan="4" class="table-full-text">
               ${item.fullText}

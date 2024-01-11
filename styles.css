@@ -182,7 +182,7 @@ table {
   animation: fadeIn 0.5s linear forwards;
 }
 
-.tbl-accordion-body {
+.table-accordion-body {
   display: none;
 }
 
