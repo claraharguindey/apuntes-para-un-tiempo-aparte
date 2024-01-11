@@ -12,8 +12,6 @@ const content = [
     text: "viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    fullText:
-      "Como un instituto (que es también un meta-instituto, un destituto, un antistituto, etc.), el ITS tiene sus “estatutos fundacionales”. Podrían ser diferentes, o quizá no tanto hoy en día, colocados uno después del otro, pero todos de igual importancia: “1. El Instituto del Tiempo Suspendido se funda en un momento preciso de una época precisa, en el llamado neoliberalismo, pero <i>viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo<i>.” ",
     image: "INSTITUTO1",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
@@ -23,8 +21,6 @@ const content = [
     text: "hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    fullText:
-      "El ITS entiende el tiempo suspendido de infinitas maneras, pero apuntando siempre y en cualquier caso a maneras de vivir el tiempo que contestan la crononormatividad. La crononormatividad actual está basada en una concepción lineal, homogénea, neutra, cuantitativa, télica, productivista del tiempo: esos ritmos extenuantes y maquinales que se venden como necesarios y naturales.",
   },
   {
     id: 3,
@@ -32,8 +28,6 @@ const content = [
     text: "un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    fullText:
-      "La página del Instituto del Tiempo Suspendido es una página web, claro, y también otras cosas. Quizá es un <i>agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita<i>: si entras y viajas por sus pestañas, sentirás que lo que ven tus ojos, tu relación con el tiempo, la política del mundo y del universo entero no volverán a ser lo que han sido hasta ese momento. También es quizá -no es una alucinación, es real, es personal, es político- un espacio tridimensional: esa página es la “sede virtual” del Instituto del Tiempo Suspendido que refleja las diferentes “sedes físicas” que el ITS ha desplegado en diferentes museos y centros culturales. Y esa página web quizá sería también -como algo alguien que te estaba esperando...- un pecio ante el naufragio temporal de nuestras vidas en pleno neoliberalismo: una barca de salvamento ante el productivismo, un tablón que nos mantendrá a flote para llegar a un lugar (una isla paradisíaca, una ciudad, tu propia casa) donde se suspende el tiempo y se experiencia la cronodiversidad...",
     image: "INSTITUTO4",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
@@ -44,8 +38,6 @@ const content = [
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
     image: "INSTITUTO3",
-    fullText:
-      "El ITS se orienta, por tanto, <i>hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres<i> (humanos animales vegetales): <i>somos, cada cual, tiempos<i>.",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -54,8 +46,6 @@ const content = [
     text: "la crononormatividad es un modo de implantación, una técnica por la que las fuerzas institucionales llegan a parecer hechos somáticos...",
     author: "Elisabeth Freeman",
     title: "Time Binds: Queer Temporalities, Queer Histories",
-    fullText:
-      "<i>La crononormatividad es un modo de implantación, una técnica por la que las fuerzas institucionales llegan a parecer hechos somáticos.<i> <i>Los horarios, los calendarios, las zonas horarias e incluso los relojes de pulsera inculcan<i> lo que el sociólogo Evitar Zerubavel llama 'ritmos ocultos', <i>formas de experiencia temporal que parecen naturales<i> para aquellos a los que benefician. Las manipulaciones del tiempo convierten históricamente regímenes específicos de poder asimétrico en tempos y rutinas corporales aparentemente ordinarios, que, a su vez, organizan el valor y el significado del tiempo.",
     image: "BIBLIOGRAFIA.jpeg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
@@ -65,6 +55,8 @@ const content = [
     text: "los horarios, los calendarios, las zonas horarias e incluso los relojes de pulsera inculcan [...] formas de experiencia temporal que parecen naturales...",
     author: "Elisabeth Freeman",
     title: "Time Binds: Queer Temporalities, Queer Histories",
+    fullText:
+      "<i>La crononormatividad es un modo de implantación, una técnica por la que las fuerzas institucionales llegan a parecer hechos somáticos.</i> <i>Los horarios, los calendarios, las zonas horarias e incluso los relojes de pulsera inculcan</i> lo que el sociólogo Evitar Zerubavel llama 'ritmos ocultos', <i>formas de experiencia temporal que parecen naturales</i> para aquellos a los que benefician. Las manipulaciones del tiempo convierten históricamente regímenes específicos de poder asimétrico en tempos y rutinas corporales aparentemente ordinarios, que, a su vez, organizan el valor y el significado del tiempo.",
   },
   {
     id: 7,
@@ -72,8 +64,6 @@ const content = [
     text: "hay un lugar donde el tiempo está detenido. Las gotas de lluvia cuelgan inmóviles en el aire. Los péndulos de los relojes flotan a medio vaivén...",
     author: "Alan Lightman",
     title: "Los sueños de Einstein",
-    fullText:
-      "<i>Hay un lugar donde el tiempo está detenido. Las gotas de lluvia cuelgan inmóviles en el aire. Los péndulos de los relojes flotan a medio vaivén<i>. Los perros alzan sus hocicos en aullidos silenciosos. Los transeúntes están congelados en calles polvorientas, con las piernas alzadas y como sostenidas por hilos. Los aromas de los dátiles, los mangos, el cilantro, el comino permanecen suspendidos en el espacio.",
   },
   {
     id: 8,
@@ -82,7 +72,7 @@ const content = [
     author: "Alan Lightman",
     title: "Los sueños de Einstein",
     fullText:
-      "Cuando un viajero se aproxima a ese lugar desde cualquier dirección, se mueve cada vez más lentamente. Los latidos de su corazón van distanciándose cada vez más, se ralentiza su respiración, desciende su temperatura corporal, se reducen sus pensamientos, hasta que llega al centro exacto y se detiene. Ese es el centro del tiempo. <i>El tiempo viaja hacia el exterior en círculos concéntricos; en el centro está inmóvil, y se mueve a mayor velocidad a medida que el diámetro aumenta<i>. ¿Quién querría hacer una peregrinación hasta el centro del tiempo? Los padres con sus hijos, los amantes.",
+      "<i>Hay un lugar donde el tiempo está detenido. Las gotas de lluvia cuelgan inmóviles en el aire. Los péndulos de los relojes flotan a medio vaivén</i>. Los perros alzan sus hocicos en aullidos silenciosos. Los transeúntes están congelados en calles polvorientas, con las piernas alzadas y como sostenidas por hilos. Los aromas de los dátiles, los mangos, el cilantro, el comino permanecen suspendidos en el espacio. <br><br>Cuando un viajero se aproxima a ese lugar desde cualquier dirección, se mueve cada vez más lentamente. Los latidos de su corazón van distanciándose cada vez más, se ralentiza su respiración, desciende su temperatura corporal, se reducen sus pensamientos, hasta que llega al centro exacto y se detiene. Ese es el centro del tiempo. <i>El tiempo viaja hacia el exterior en círculos concéntricos; en el centro está inmóvil, y se mueve a mayor velocidad a medida que el diámetro aumenta<i>. ¿Quién querría hacer una peregrinación hasta el centro del tiempo? Los padres con sus hijos, los amantes.",
   },
   {
     id: 9,
@@ -90,8 +80,6 @@ const content = [
     text: "de dónde venimos, a dónde vamos, las preguntas capitales de nuestra existencia vuelven a plantearse en los viajes...",
     author: "Andrea Köhler",
     title: "El tiempo regalado. Un ensayo sobre la espera.",
-    fullText:
-      "El ritmo, el rumor y el latido de las olas nos devuelven ese cuerpo que fue el primero que nos hizo transitar el espacio. <i>De dónde venimos, a dónde vamos, las preguntas capitales de nuestra existencia vuelven a plantearse en los viajes.<i> El topos del viaje de la vida no es, por tanto, banal, porque acompaña a la humanidad desde que Ulises se hizo a la mar. Partir, salir de viaje, arribar a otras orillas, constituye, a pesar del desencanto que aguarda al turista, un deseo que no es posible erradicar; procede del Paraíso, y a él nos conducirá.",
   },
   {
     id: 10,
@@ -100,7 +88,7 @@ const content = [
     author: "Andrea Köhler",
     title: "El tiempo regalado. Un ensayo sobre la espera.",
     fullText:
-      "<i>Viajar es siempre un salto en el tiempo, continuamente vamos en pos de las huellas del primer temor<i> que acompaña no la marcha, sino también el regreso: <i>el peligro de que al volver no nos reconozcan<i> (del que Ulises es prototipo). Pero toda gran partida tiene una promesa de triunfo: solo por marchar se nos atribuirá nuestro verdadero valor (como al hijo pródigo). Es parte del viaje que alguien espere y dé fe de nuestra ausencia.",
+      "<i>Viajar es siempre un salto en el tiempo, continuamente vamos en pos de las huellas del primer temor</i> que acompaña no la marcha, sino también el regreso: <i>el peligro de que al volver no nos reconozcan<i> (del que Ulises es prototipo). Pero toda gran partida tiene una promesa de triunfo: solo por marchar se nos atribuirá nuestro verdadero valor (como al hijo pródigo). Es parte del viaje que alguien espere y dé fe de nuestra ausencia.<br>El ritmo, el rumor y el latido de las olas nos devuelven ese cuerpo que fue el primero que nos hizo transitar el espacio. <i>De dónde venimos, a dónde vamos, las preguntas capitales de nuestra existencia vuelven a plantearse en los viajes.</i> El topos del viaje de la vida no es, por tanto, banal, porque acompaña a la humanidad desde que Ulises se hizo a la mar. Partir, salir de viaje, arribar a otras orillas, constituye, a pesar del desencanto que aguarda al turista, un deseo que no es posible erradicar; procede del Paraíso, y a él nos conducirá.",
   },
   {
     id: 11,
@@ -153,8 +141,7 @@ const content = [
     text: "la danza del futuro no participa de la estructura narrativa lineal, positiva e insaciable...",
     author: "jaime conde salazar",
     title: "La danza del futuro.",
-    fullText:
-      "La danza del futuro no tiene una forma concreta. O lo que es lo mismo, puede tener cualquier forma. En ese sentido, elude la clasificación clásica según estilos, movimientos, metodologías, géneros o escuelas que resulta a todas luces insuficiente para referirse a la realidad multiforme de la danza del futuro. Quien intente reconocer la danza del futuro buscando una apariencia específica acabará hecho un lío.",
+    fullText: "",
   },
   {
     id: 17,
@@ -162,8 +149,6 @@ const content = [
     text: "la danza del futuro existe en muchos tiempos distintos. No es una cosa reciente ni siquiera novedosa. Lleva pasando desde hace mucho tiempo...",
     author: "jaime conde salazar",
     title: "La danza del futuro.",
-    fullText:
-      "<i>La danza del futuro no participa de la estructura narrativa lineal, positiva e insaciable.</i> La danza del futuro no viene después de nada, no viene a mejorar nada, ni a dar de comer a ninguna bestia moderna adicta al consumo de novedad. Porque hace mucho tiempo que sabemos que todo está todo el tiempo. (...) <i>La danza del futuro existe en muchos tiempos distintos. No es una cosa reciente ni siquiera novedosa. Lleva pasando desde hace mucho tiempo.<i>",
   },
   {
     id: 18,
@@ -172,7 +157,7 @@ const content = [
     author: "jaime conde salazar",
     title: "La danza del futuro.",
     fullText:
-      "<i>La danza del futuro no tiene una forma concreta. O lo que es lo mismo, puede tener cualquier forma.</i> En ese sentido, elude la clasificación clásica según estilos, movimientos, metodologías, géneros o escuelas que resulta a todas luces insuficiente para referirse a la realidad multiforme de la danza del futuro. Quien intente reconocer la danza del futuro buscando una apariencia específica acabará hecho un lío.",
+      "La danza del futuro no tiene una forma concreta. O lo que es lo mismo, puede tener cualquier forma. En ese sentido, elude la clasificación clásica según estilos, movimientos, metodologías, géneros o escuelas que resulta a todas luces insuficiente para referirse a la realidad multiforme de la danza del futuro. Quien intente reconocer la danza del futuro buscando una apariencia específica acabará hecho un lío. <br><br><i>La danza del futuro no participa de la estructura narrativa lineal, positiva e insaciable.</i> La danza del futuro no viene después de nada, no viene a mejorar nada, ni a dar de comer a ninguna bestia moderna adicta al consumo de novedad. Porque hace mucho tiempo que sabemos que todo está todo el tiempo. (...) <i>La danza del futuro existe en muchos tiempos distintos. No es una cosa reciente ni siquiera novedosa. Lleva pasando desde hace mucho tiempo.<i> <br><br><i>La danza del futuro no tiene una forma concreta. O lo que es lo mismo, puede tener cualquier forma.</i> En ese sentido, elude la clasificación clásica según estilos, movimientos, metodologías, géneros o escuelas que resulta a todas luces insuficiente para referirse a la realidad multiforme de la danza del futuro. Quien intente reconocer la danza del futuro buscando una apariencia específica acabará hecho un lío.",
   },
   {
     id: 19,
@@ -226,8 +211,6 @@ const content = [
     text: "el instante, más que ser una unidad de medición del tiempo, es una experiencia temporal particular...",
     author: "Luciano Concheiro",
     title: "Contra el tiempo. Filosofía práctica del instante.",
-    fullText:
-      "...<i>el instante, más que ser una unidad de medición del tiempo, es una experiencia temporal particular.<i> Como dice la sabiduría popular, el instante dura apenas unos segundos, pero lo definitorio no es eso, sino que gracias a ese fugaz momento se pierde la noción del pasar del tiempo. <i>El instante es una chispa que nos arroja fuera del devenir. Las horas se paralizan, las fechas son abolidas. Sencillamente: el tiempo deja de correr. La sucesión desaparece.<i>",
   },
   {
     id: 25,
@@ -235,8 +218,6 @@ const content = [
     text: "nadie puede indicarnos cuál es el camino exacto para experimentar el instante. Cada quien debe encontrar sus propios mecanismos, sus propias prácticas...",
     author: "Luciano Concheiro",
     title: "Contra el tiempo. Filosofía práctica del instante.",
-    fullText:
-      "<i>Nadie puede indicarnos cuál es el camino exacto para experimentar el instante. Cada quien debe encontrar sus propios mecanismos, sus propias prácticas.<i> Desde la intimidad, desde la especificidad. Con creatividad e imaginación.",
   },
 
   {
@@ -245,6 +226,8 @@ const content = [
     text: "el instante es una chispa que nos arroja fuera del devenir. Las horas se paralizan, las fechas son abolidas. Sencillamente: el tiempo deja de correr. La sucesión desaparece...",
     author: "Luciano Concheiro",
     title: "Contra el tiempo. Filosofía práctica del instante.",
+    fullText:
+      "<i>Nadie puede indicarnos cuál es el camino exacto para experimentar el instante. Cada quien debe encontrar sus propios mecanismos, sus propias prácticas.</i> Desde la intimidad, desde la especificidad. Con creatividad e imaginación.<br><br>...<i>el instante, más que ser una unidad de medición del tiempo, es una experiencia temporal particular.</i> Como dice la sabiduría popular, el instante dura apenas unos segundos, pero lo definitorio no es eso, sino que gracias a ese fugaz momento se pierde la noción del pasar del tiempo. <i>El instante es una chispa que nos arroja fuera del devenir. Las horas se paralizan, las fechas son abolidas. Sencillamente: el tiempo deja de correr. La sucesión desaparece.</i>",
   },
   {
     id: 27,
@@ -279,8 +262,6 @@ const content = [
     author:
       "Elena Córdoba, Nilo Gallego, Julián Mayorga, Christian Pérez Yates y Laura Ramírez Ashbaugh",
     title: "Salón de baile para bambolear el tiempo",
-    fullText:
-      "Esta noche queremos invocar al tiempo para que venga a bailar con nosotras, queremos bambolearlo hasta que olvide el transcurso, la prisa, hasta que no sepa qué va antes y qué va después. Queremos que el tiempo se pierda, que se estanque, que tiemble como lo hacemos nosotras al bailar. Lo queremos incoherente, lo queremos inútil, lo queremos inconsciente, igual que son nuestros bailes. Antes de que existieran los segundos medíamos los tiempos leves con el pulso, lo que tardaba un latido en repetirse era una medida íntima y carnal del tiempo. Esos golpes suaves y graves se metieron en nuestras músicas para sujetar el cuerpo mientras baila, igual que el latido nos sujeta a la vida.",
   },
   {
     id: 31,
@@ -290,7 +271,7 @@ const content = [
       "Elena Córdoba, Nilo Gallego, Julián Mayorga, Christian Pérez Yates y Laura Ramírez Ashbaugh",
     title: "Salón de baile para bambolear el tiempo",
     fullText:
-      "Esta noche queremos invocar un tiempo hecho de la suavidad de los golpes de la <i> sangre, un tiempo que meza nuestros cuerpos, un tiempo muscular y alegre, un tiempo que no nos falte y que nunca nos falle. Hay tiempo por delante. Hay tiempo por delante. ¿Bailamos???",
+      "Esta noche queremos invocar al tiempo para que venga a bailar con nosotras, queremos bambolearlo hasta que olvide el transcurso, la prisa, hasta que no sepa qué va antes y qué va después. Queremos que el tiempo se pierda, que se estanque, que tiemble como lo hacemos nosotras al bailar. Lo queremos incoherente, lo queremos inútil, lo queremos inconsciente, igual que son nuestros bailes. Antes de que existieran los segundos medíamos los tiempos leves con el pulso, lo que tardaba un latido en repetirse era una medida íntima y carnal del tiempo. Esos golpes suaves y graves se metieron en nuestras músicas para sujetar el cuerpo mientras baila, igual que el latido nos sujeta a la vida. <br><br>Esta noche queremos invocar un tiempo hecho de la suavidad de los golpes de la <i> sangre, un tiempo que meza nuestros cuerpos, un tiempo muscular y alegre, un tiempo que no nos falte y que nunca nos falle. Hay tiempo por delante. Hay tiempo por delante. ¿Bailamos???",
   },
   {
     id: 32,
@@ -307,8 +288,6 @@ const content = [
     author:
       "Elena Córdoba, Nilo Gallego, Julián Mayorga, Christian Pérez Yates y Laura Ramírez Ashbaugh",
     title: "Salón de baile para bambolear el tiempo",
-    fullText:
-      "Todo tiene su tiempo. Reggaeton del Eclesiates<br><i>Todo tiene su tiempo, y para todo lo que se quiere hay un tiempo bajo el cielo.</i><br> Tiempo de nacer, y tiempo de morir;<br> tiempo de plantar, y tiempo de arrancar lo plantado;</br> tiempo de matar, y tiempo de curar;<br></br> tiempo de destruir, y tiempo de edificar;<br></br> tiempo de llorar, y tiempo de reír;<br></br><br></br>Me gusta la gasolina<br></br>dame más gasolina.<br></br><br></br>tiempo de endechar, y tiempo de bailar;<br></br>tiempo de esparcir piedras, y tiempo de juntar piedras;<br></br>tiempo de abrazar, y tiempo de abstenerse de abrazar;<br></br>tiempo de buscar, y tiempo de perder;<br></br>tiempo de guardar, y tiempo de desechar;  <br></br><br></br>Me gusta la gasolina<br></br>dame más gasolina<br></br><br></br>tiempo de romper, y tiempo de coser;<br></br>tiempo de callar, y tiempo de hablar;<br></br>  tiempo de amar, y tiempo de aborrecer;<br></br>tiempo de guerra, y tiempo de paz.<br></br><br></br>Me gusta la gasolina<br></br>dame más gasolina….",
   },
   {
     id: 34,
@@ -317,6 +296,8 @@ const content = [
     author:
       "Elena Córdoba, Nilo Gallego, Julián Mayorga, Christian Pérez Yates y Laura Ramírez Ashbaugh",
     title: "Salón de baile para bambolear el tiempo",
+    fullText:
+      "Todo tiene su tiempo. Reggaeton del Eclesiates<br><br><i>Todo tiene su tiempo, y para todo lo que se quiere hay un tiempo bajo el cielo.</i><br> Tiempo de nacer, y tiempo de morir;<br> tiempo de plantar, y tiempo de arrancar lo plantado; tiempo de matar, y tiempo de curar;<br> tiempo de destruir, y tiempo de edificar;<br> tiempo de llorar, y tiempo de reír;<br><br>Me gusta la gasolina<br>dame más gasolina.<br><br>tiempo de endechar, y tiempo de bailar;<br>tiempo de esparcir piedras, y tiempo de juntar piedras;<br>tiempo de abrazar, y tiempo de abstenerse de abrazar;<br>tiempo de buscar, y tiempo de perder;<br>tiempo de guardar, y tiempo de desechar;  <br><br>Me gusta la gasolina<br>dame más gasolina<br><br>tiempo de romper, y tiempo de coser;<br>tiempo de callar, y tiempo de hablar;<br> tiempo de amar, y tiempo de aborrecer;<br>tiempo de guerra, y tiempo de paz.<br><br>Me gusta la gasolina<br>dame más gasolina….",
   },
   {
     id: 35,
@@ -372,8 +353,6 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    fullText:
-      "Poema – Chess <br> Desde el cuarto en cuyas paredes reposa el ábside de una iglesia, se encuentra un maricón<br>dejándose los dedos bordando por la virgen que representa su barrio.<br>Desde el andamio más alto del más alto fresco se encuentra el maricón que embellece de pan<br>de oro nuestro patrimonio.<br>Desde el taller de imaginería que acompaña en su proximidad los yacimientos de arcilla del<br>Guadalquivir, se encuentra el maricon que acaricia con sus manos lo que será la faz de la<br>devoción.<br>Desde los estudios, desde los cuartichines de las casas, desde los camerinos, entre patrones,<br>entre pinturas y materiales nobles. Entre pelo, plumas y joyas.<br>Se encuentran ahí 'Mis niñas de pelo corto'<br>o 'Mis mariquitas que los quiero mucho'<br>Piropos que nacen desde el consuelo, por que decirnos que el arte de España recae sobre<br>nuestros hombros es demasiado para la época.<br>Es demasiado para cualquier época.<br><i>Hoy mis amigas, mis amapolas, mis claveles, mis rosas, pensamientos, jazmines y azahares.</i><br><i>Me dan una lección desafiando a la propia historia.</i><br>Para entrar a defender la contemporaneidad de nuestro arte en un museo siendo travestis.<br>Ya no es necesario morir entre llamas y gritos, ni que te venza la vida después de una paliza, ni<br>dejar el mundo terrenal a consecuencia del sida.<br>Si nos vieran aquellas niñas del pasado, qué contentas estarían de que se nos valorase por lo<br>que aportamos y no por nuestras tragedias.",
   },
   {
     id: 42,
@@ -382,8 +361,6 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    fullText:
-      "CORRE, CORRE, CABALLITO (Marisol)<br>Corre, corre, caballito<br>Trota por la carretera<br>No detengas tu carrera",
   },
   {
     id: 43,
@@ -393,7 +370,7 @@ const content = [
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
     fullText:
-      "TRAVESTI – PAKITA<br>Nací así, bendecía por la vida<br>y todos hablan de mí.<br>Yo no soy hombre ni mujer,<br>Elegí vivir así<br>Y a mí ya nada me importa<br>Lo que vayas a decir,<br>Porque digas lo que digas<br>Eso no me incumbe a mí.<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ,<br>En mis noches yo me ensueño,<br>Que se enamoran de mí<br>Qué pesadilla más grande<br>Yo nunca seré feliz<br>De madrugada en tacones<br>Para todos despertar<br>Voy gritando por las calles<br>¡que viva la libertad!<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ<br><i>Y lloro sola en mi cama,<br>Acordándome de mí<br>De pensar lo que yo soy<br>Yo nunca más seré feliz</i><br>Mi vida es el cabaret<br>Y aquí solo pienso en mí<br>Yo no soy hombre ni mujer<br>Ay yo no tengo que fingir.<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ",
+      "Poema - Chess <br> Desde el cuarto en cuyas paredes reposa el ábside de una iglesia, se encuentra un maricón<br>dejándose los dedos bordando por la virgen que representa su barrio.<br>Desde el andamio más alto del más alto fresco se encuentra el maricón que embellece de pan<br>de oro nuestro patrimonio.<br>Desde el taller de imaginería que acompaña en su proximidad los yacimientos de arcilla del<br>Guadalquivir, se encuentra el maricon que acaricia con sus manos lo que será la faz de la<br>devoción.<br>Desde los estudios, desde los cuartichines de las casas, desde los camerinos, entre patrones,<br>entre pinturas y materiales nobles. Entre pelo, plumas y joyas.<br>Se encuentran ahí 'Mis niñas de pelo corto'<br>o 'Mis mariquitas que los quiero mucho'<br>Piropos que nacen desde el consuelo, por que decirnos que el arte de España recae sobre<br>nuestros hombros es demasiado para la época.<br>Es demasiado para cualquier época.<br><i>Hoy mis amigas, mis amapolas, mis claveles, mis rosas, pensamientos, jazmines y azahares.</i><br><i>Me dan una lección desafiando a la propia historia.</i><br>Para entrar a defender la contemporaneidad de nuestro arte en un museo siendo travestis.<br>Ya no es necesario morir entre llamas y gritos, ni que te venza la vida después de una paliza, ni<br>dejar el mundo terrenal a consecuencia del sida.<br>Si nos vieran aquellas niñas del pasado, qué contentas estarían de que se nos valorase por lo<br>que aportamos y no por nuestras tragedias.<br><br><br>CORRE, CORRE, CABALLITO (Marisol)<br>Corre, corre, caballito<br>Trota por la carretera<br>No detengas tu carrera <br><br><br>TRAVESTI – PAKITA<br>Nací así, bendecía por la vida<br>y todos hablan de mí.<br>Yo no soy hombre ni mujer,<br>Elegí vivir así<br>Y a mí ya nada me importa<br>Lo que vayas a decir,<br>Porque digas lo que digas<br>Eso no me incumbe a mí.<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ,<br>En mis noches yo me ensueño,<br>Que se enamoran de mí<br>Qué pesadilla más grande<br>Yo nunca seré feliz<br>De madrugada en tacones<br>Para todos despertar<br>Voy gritando por las calles<br>¡que viva la libertad!<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ<br><i>Y lloro sola en mi cama,<br>Acordándome de mí<br>De pensar lo que yo soy<br>Yo nunca más seré feliz</i><br>Mi vida es el cabaret<br>Y aquí solo pienso en mí<br>Yo no soy hombre ni mujer<br>Ay yo no tengo que fingir.<br>Travestí, travestí, travestí, travestí<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ<br>TRAVESTÍ, TRAVESTÍ, TRAVESTÍ, TRAVESTÍ",
   },
   {
     id: 44,
@@ -436,8 +413,6 @@ const content = [
     text: "interrumpir el ritmo,/ el paso,/ la respiración/ Detener el tiempo/ Robar lo que ya se tiene/ Tropezar en la huida...",
     author: "Fefa Vila",
     title: "Sound Cuts",
-    fullText:
-      "<br>[3-FINAL. 2']<br><br>Romper en mil pedazos<br>Una ventana<br><i>Interrumpir el ritmo,<br>el paso,<br>la respiración<br>Detener el tiempo<br>Robar lo que ya se tiene<br>Tropezar en la huida</i><br>Estallan y corren contra las puertas<br>Era tan frágil...<br>Era tan frágil...<br>Ensordecedor<br>El ruido de lo que se rompe<br>La plusvalía<br>El valor de cambio<br>La nación<br>El estado<br>El sexo<br>El género<br>El Museo<br>Y, ¿La libertad?<br>La libertad<br>Se la toman<br>Se la beben<br>la intercambian<br>La regalan<br>Fracasar torpemente<br>Pero fracasad<br>Alboroto<br>Alegría<br>Baile<br>Bailan<br>y van por libre<br>Una Multitud de Amantes BAILANDO<br>NUNCA Puede Perder",
   },
   {
     id: 49,
@@ -445,6 +420,8 @@ const content = [
     text: "bailan/ y van por libre...",
     author: "Fefa Vila",
     title: "Sound Cuts",
+    fullText:
+      "<br>[3-FINAL. 2']<br><br>Romper en mil pedazos<br>Una ventana<br><i>Interrumpir el ritmo,<br>el paso,<br>la respiración<br>Detener el tiempo<br>Robar lo que ya se tiene<br>Tropezar en la huida</i><br>Estallan y corren contra las puertas<br>Era tan frágil...<br>Era tan frágil...<br>Ensordecedor<br>El ruido de lo que se rompe<br>La plusvalía<br>El valor de cambio<br>La nación<br>El estado<br>El sexo<br>El género<br>El Museo<br>Y, ¿La libertad?<br>La libertad<br>Se la toman<br>Se la beben<br>la intercambian<br>La regalan<br>Fracasar torpemente<br>Pero fracasad<br>Alboroto<br>Alegría<br>Baile<br>Bailan<br>y van por libre<br>Una Multitud de Amantes BAILANDO<br>NUNCA Puede Perder",
   },
   {
     id: 50,
@@ -569,8 +546,6 @@ const content = [
     text: "la ruina disuelve el tiempo para nosotrxs, nos permite empezar después del final: escuchar los restos, lo que queda pese a todo...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    fullText:
-      "¿Qué sentidos se abren ante la presencia de un tiempo, un cuerpo y una escena a punto de caerse? A través de la ruina podemos profundizar en el alcance estético de un tiempo que, catastrófica y trágicamente, no nos pertenece. Como figuración temporal y material, <i>la ruina disuelve el tiempo para nosotrxs, nos permite empezar después del final: escuchar los restos, lo que queda pese a todo.</i> A través de la ruina nos dejamos caer, propiciamos el derrumbamiento de las narrativas y los paradigmas que traman nuestra época. Nos abrimos al tiempo de todo aquello que no somos y nos situamos en un escenario poscontemporáneo. En definitiva, experimentamos el encuentro con la estética de un tiempo raro y tremendamente abierto: un tiempo que es, a la vez, futural y espectral.",
   },
   {
     id: 66,
@@ -587,8 +562,6 @@ const content = [
     text: "emerger un tercer lugar transitorio, mutante y anacrónico...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    fullText:
-      "Como parte de este planteamiento, proponemos favorecer la comunicación entre los cuerpos que fuimos, los que somos y los que no somos. Desde la dimensión sensible del tacto, transmitimos de un cuerpo a otro lo visible e invisible de las “cosas” (materiales, estructuras, superficies, afectos, sensaciones, imágenes). Además, experimentamos la dimensión material y sonora de cosas casi desaparecidas y olvidadas. Cosas detenidas “cuya poquedad está a la espera”, cosas cuya supervivencia permite dos actitudes vitales: la atención y la escucha.",
     image: "AUNNO3",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
@@ -599,7 +572,7 @@ const content = [
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
     fullText:
-      "Teniendo en cuenta que <i>la tarea del arte no es la de predecir el futuro, sino la de ser capaz de “ver” el presente o entender la potencialidad futura</i>, ¿qué necesitamos para hacerlo posible? Este encuentro es una invitación a pensar en esta pregunta y especular sobre sus implicaciones éticas remontándonos al ámbito de la sensación intuitiva de la estética y, por lo tanto, retomando el sentido griego del theatron cuyo significado alude al “lugar para ver y escuchar en lugar de comunicar”. Para mundificar necesitamos un teatro que permita elaborar formas de “abrir los ojos” a la realidad después de haberlos “cerrado”. Teniendo en cuenta que, lejos de ser un proceso activo y consciente, “ver” es la capacidad de reconocer en nosotrxs el asombro y el misterio que produce la escucha de un campo terriblemente silencioso: el encuentro con un interior que antes no conocíamos.",
+      "¿Qué sentidos se abren ante la presencia de un tiempo, un cuerpo y una escena a punto de caerse? A través de la ruina podemos profundizar en el alcance estético de un tiempo que, catastrófica y trágicamente, no nos pertenece. Como figuración temporal y material, <i>la ruina disuelve el tiempo para nosotrxs, nos permite empezar después del final: escuchar los restos, lo que queda pese a todo.</i> A través de la ruina nos dejamos caer, propiciamos el derrumbamiento de las narrativas y los paradigmas que traman nuestra época. Nos abrimos al tiempo de todo aquello que no somos y nos situamos en un escenario poscontemporáneo. En definitiva, experimentamos el encuentro con la estética de un tiempo raro y tremendamente abierto: un tiempo que es, a la vez, futural y espectral. <br><br>Como parte de este planteamiento, proponemos favorecer la comunicación entre los cuerpos que fuimos, los que somos y los que no somos. Desde la dimensión sensible del tacto, transmitimos de un cuerpo a otro lo visible e invisible de las “cosas” (materiales, estructuras, superficies, afectos, sensaciones, imágenes). Además, experimentamos la dimensión material y sonora de cosas casi desaparecidas y olvidadas. Cosas detenidas “cuya poquedad está a la espera”, cosas cuya supervivencia permite dos actitudes vitales: la atención y la escucha. <br><br>Teniendo en cuenta que <i>la tarea del arte no es la de predecir el futuro, sino la de ser capaz de “ver” el presente o entender la potencialidad futura</i>, ¿qué necesitamos para hacerlo posible? Este encuentro es una invitación a pensar en esta pregunta y especular sobre sus implicaciones éticas remontándonos al ámbito de la sensación intuitiva de la estética y, por lo tanto, retomando el sentido griego del theatron cuyo significado alude al “lugar para ver y escuchar en lugar de comunicar”. Para mundificar necesitamos un teatro que permita elaborar formas de “abrir los ojos” a la realidad después de haberlos “cerrado”. Teniendo en cuenta que, lejos de ser un proceso activo y consciente, “ver” es la capacidad de reconocer en nosotrxs el asombro y el misterio que produce la escucha de un campo terriblemente silencioso: el encuentro con un interior que antes no conocíamos.",
   },
   {
     id: 69,
@@ -665,8 +638,6 @@ const content = [
     title: "Restos en suspenso, todavía",
     image: "RESTOS2",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
-    fullText:
-      "Aquí, los microbios de esos participantes anónimos, mezclados en gruesas capas de tarta de chocolate, se convierten en <i>paisajes ralentizados en los que se suspende su degradación, su mutación, su animación.</i> Pasan a ser unas 'conversaciones' prolongadas entre microorganismos y personas, desplegando una temporalidad distinta que no le pertenece a nadie. Al menos, mientras dure la refrigeración, porque estos otros encuentros en un nuevo tiempo suspendido necesitan ser técnicamente preservados.",
   },
   {
     id: 77,
@@ -676,8 +647,6 @@ const content = [
     title: "Restos en suspenso, todavía",
     image: "RESTOS3",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
-    fullText:
-      "Después, lo que queda se estas conversaciones y restos de comida compartida, que en su momento han formado parte de diferentes contextos, profesiones, clases sociales y distintas micro y macro visiones del mundo, es situado dentro de una red de refrigeradores programada para <i>preservar esta mezcla fluida en una suerte de cápsulas del tiempo a -4ºC.</i>",
   },
   {
     id: 78,
@@ -687,6 +656,8 @@ const content = [
     title: "Restos en suspenso, todavía",
     image: "RESTOS4",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
+    fullText:
+      "Aquí, los microbios de esos participantes anónimos, mezclados en gruesas capas de tarta de chocolate, se convierten en <i>paisajes ralentizados en los que se suspende su degradación, su mutación, su animación.</i> Pasan a ser unas 'conversaciones' prolongadas entre microorganismos y personas, desplegando una temporalidad distinta que no le pertenece a nadie. Al menos, mientras dure la refrigeración, porque estos otros encuentros en un nuevo tiempo suspendido necesitan ser técnicamente preservados. <br><br>Después, lo que queda se estas conversaciones y restos de comida compartida, que en su momento han formado parte de diferentes contextos, profesiones, clases sociales y distintas micro y macro visiones del mundo, es situado dentro de una red de refrigeradores programada para <i>preservar esta mezcla fluida en una suerte de cápsulas del tiempo a -4ºC.</i>",
   },
   {
     id: 79,
@@ -694,8 +665,6 @@ const content = [
     text: "que los sonidos caigan por sí solos... caer, bajar, tocar fondo, derramar, saltar, y fluir...",
     author: "Romina Casile",
     title: "Lo que resuena (escribir un río)",
-    fullText:
-      "<a href='https://www.museoreinasofia.es/multimedia/que-resuena-escribir-rio' target='_blank'>https://www.museoreinasofia.es/multimedia/que-resuena-escribir-rio</a>",
     image: "ESCRIBIRUNRIO1",
   },
   {
@@ -728,6 +697,8 @@ const content = [
     text: "el río como metáfora; el río como deriva...",
     author: "Romina Casile",
     title: "Lo que resuena (escribir un río)",
+    fullText:
+      "<a href='https://www.museoreinasofia.es/multimedia/que-resuena-escribir-rio' target='_blank'>https://www.museoreinasofia.es/multimedia/que-resuena-escribir-rio</a>",
   },
   {
     id: 84,
@@ -840,7 +811,7 @@ const content = [
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
     fullText:
-      "Como medio de investigación conceptual y de formalizacion estética, el ITS apunta efectivamente a suspender el tiempo, es decir, <i>desnaturalizar la experiencia del tiempo lineal, cronométrico, homogéneo, télico, productivo y aceleracionista de nuestra época.</i> Tal es “la hora occidental”. Se trata, en definitiva, de dar un paso más en el camino de los formatos artísticos, avanzar originalmente en la política de las prácticas estéticas: fundar un instituto, un anti-instituto o un destituto para suspender los ritmos impuestos por la época que nos ha tocado vivir, el neoliberalismo. Es decir, para reapropiarse del tiempo expropiado en el estrés laboral (“La vida no me da”), el falso ocio digital (“Así desconecto”), el extractivismo planetario (“Maquinizar lo vivo y la tierra”), la presión familiar y social que nos impone “no perder tiempo”.",
+      "La página del Instituto del Tiempo Suspendido es una página web, claro, y también otras cosas. Quizá es un <i>agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita</i>: si entras y viajas por sus pestañas, sentirás que lo que ven tus ojos, tu relación con el tiempo, la política del mundo y del universo entero no volverán a ser lo que han sido hasta ese momento. También es quizá -no es una alucinación, es real, es personal, es político- un espacio tridimensional: esa página es la “sede virtual” del Instituto del Tiempo Suspendido que refleja las diferentes “sedes físicas” que el ITS ha desplegado en diferentes museos y centros culturales. Y esa página web quizá sería también -como algo alguien que te estaba esperando...- un pecio ante el naufragio temporal de nuestras vidas en pleno neoliberalismo: una barca de salvamento ante el productivismo, un tablón que nos mantendrá a flote para llegar a un lugar (una isla paradisíaca, una ciudad, tu propia casa) donde se suspende el tiempo y se experiencia la cronodiversidad... <br><br>El ITS se orienta, por tanto, <i>hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres</i> (humanos animales vegetales): <i>somos, cada cual, tiempos</i>. <br><br> Como medio de investigación conceptual y de formalizacion estética, el ITS apunta efectivamente a suspender el tiempo, es decir, <i>desnaturalizar la experiencia del tiempo lineal, cronométrico, homogéneo, télico, productivo y aceleracionista de nuestra época.</i> Tal es “la hora occidental”. Se trata, en definitiva, de dar un paso más en el camino de los formatos artísticos, avanzar originalmente en la política de las prácticas estéticas: fundar un instituto, un anti-instituto o un destituto para suspender los ritmos impuestos por la época que nos ha tocado vivir, el neoliberalismo. Es decir, para reapropiarse del tiempo expropiado en el estrés laboral (“La vida no me da”), el falso ocio digital (“Así desconecto”), el extractivismo planetario (“Maquinizar lo vivo y la tierra”), la presión familiar y social que nos impone “no perder tiempo”. <br>Como un instituto (que es también un meta-instituto, un destituto, un antistituto, etc.), el ITS tiene sus “estatutos fundacionales”. Podrían ser diferentes, o quizá no tanto hoy en día, colocados uno después del otro, pero todos de igual importancia: “1. El Instituto del Tiempo Suspendido se funda en un momento preciso de una época precisa, en el llamado neoliberalismo, pero <i>viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo</i>.” <br> El ITS entiende el tiempo suspendido de infinitas maneras, pero apuntando siempre y en cualquier caso a maneras de vivir el tiempo que contestan la crononormatividad. La crononormatividad actual está basada en una concepción lineal, homogénea, neutra, cuantitativa, télica, productivista del tiempo: esos ritmos extenuantes y maquinales que se venden como necesarios y naturales.",
     image: "INSTITUTO2",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
