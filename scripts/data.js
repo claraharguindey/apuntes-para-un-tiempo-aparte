@@ -2,35 +2,35 @@ const content = [
   {
     id: 0,
     figure: 1,
-    text: "El delirio de querer vivir muchos ritmos en una sola vida...",
+    text: "el delirio de querer vivir muchos ritmos en una sola vida...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
   },
   {
     id: 1,
     figure: 1,
-    text: "Viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo...",
+    text: "viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
   },
   {
     id: 2,
     figure: 1,
-    text: "Hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres...",
+    text: "hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
   },
   {
     id: 3,
     figure: 1,
-    text: "Un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita...",
+    text: "un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
   },
   {
     id: 4,
     figure: 1,
-    text: "Somos, cada cual, tiempos...",
+    text: "somos, cada cual, tiempos...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
   },
@@ -58,7 +58,7 @@ const content = [
   {
     id: 8,
     figure: 2,
-    text: "el tiempo viaja hacia el exterior en círculos concéntricos; en el centro está inmóvil, y se mueve a mayor velocidad a medida que el diámetro aumenta.",
+    text: "el tiempo viaja hacia el exterior en círculos concéntricos; en el centro está inmóvil, y se mueve a mayor velocidad a medida que el diámetro aumenta...",
     author: "Alan Lightman",
     title: "Los sueños de Einstein",
   },
@@ -231,7 +231,7 @@ const content = [
   {
     id: 32,
     figure: 3,
-    text: "hay tiempo por delante/ hay tiempo por delante/ ¿bailamos?",
+    text: "hay tiempo por delante/ hay tiempo por delante/ ¿bailamos?...",
     author:
       "Elena Córdoba, Nilo Gallego, Julián Mayorga, Christian Pérez Yates y Laura Ramírez Ashbaugh",
     title: "Salón de baile para bambolear el tiempo",
@@ -315,7 +315,7 @@ const content = [
   {
     id: 43,
     figure: 5,
-    text: "ella decidió tragarse el tiempo porque no quería sentirlo cerca...",
+    text: "y lloro sola en mi cama,/ acordándome de mí/ de pensar lo que yo soy/ yo nunca más seré feliz...",
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
@@ -393,7 +393,7 @@ const content = [
   {
     id: 54,
     figure: 8,
-    text: "algunos días siento que vivo en un decorado/ una casa blanquísima con puertas de arco, sillas de anea y cuadros con paisajes inverosímiles",
+    text: "algunos días siento que vivo en un decorado/ una casa blanquísima con puertas de arco, sillas de anea y cuadros con paisajes inverosímiles...",
     author: "Helena Mariño, Enri La Forêt",
     title: "Esta línea es un espacio recíproco de intercambio",
   },
@@ -697,5 +697,12 @@ const content = [
     text: "el crononauta se diferencia del viajero en el tiempo en que tiene un propósito: alguien que viaja para cumplir una misión...",
     author: "Brutalistas (Carlos Arévalo, David Bizarro, Servando Rocha)",
     title: "TIEMPO",
+  },
+  {
+    id: 107,
+    figure: 9,
+    text: "el biopoder total que haga colectivo no solo el espacio/ sino sobre todo:/ el tiempo...",
+    author: "Alberto Cortés",
+    title: "Los montes son tuyos",
   },
 ];
