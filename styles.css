@@ -173,7 +173,20 @@ table {
   width: 25%;
 }
 
-tr {
+.table-button {
+  width: 15%;
+}
+
+.tbl-accordion-body {
+  display: none;
+}
+
+.openRow {
+  border-bottom: 1px solid white;
+}
+
+.table-full-text {
+  padding: 12px 32px;
   border-bottom: 1px solid white;
 }
 
@@ -219,6 +232,7 @@ tr {
     opacity: 0;
   }
 }
+
 @-moz-keyframes fade_move_down {
   0% {
     -moz-transform: translate(0, -10px) rotate(45deg);
@@ -232,6 +246,7 @@ tr {
     opacity: 0;
   }
 }
+
 @keyframes fade_move_down {
   0% {
     transform: translate(0, -10px) rotate(45deg);
