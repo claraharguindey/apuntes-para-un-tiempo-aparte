@@ -177,6 +177,11 @@ table {
   width: 15%;
 }
 
+.table:target {
+  scroll-margin-top: 50px;
+  animation: fadeIn 0.5s linear forwards;
+}
+
 .tbl-accordion-body {
   display: none;
 }
@@ -260,6 +265,7 @@ table {
     opacity: 0;
   }
 }
+
 
 @keyframes fadeOut {
   0% {

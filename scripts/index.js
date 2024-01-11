@@ -20,8 +20,7 @@ const updateContent = () => {
     ephemeralText.innerHTML = `<p class="ephemeralText">${shuffledContent[counter].text}</p>`;
     catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
     apuntes.innerText += ` ${shuffledContent[counter].text}`;
-    console.log(shuffledContent[counter].figure)
-    figuresLink.href = `./pages/list.html#${shuffledContent[counter].id}`;
+    figuresLink.href = `./pages/list.html#${shuffledContent[counter].figure}`;
 
     if (counter % shuffledContent.length !== 0) {
       counter++;

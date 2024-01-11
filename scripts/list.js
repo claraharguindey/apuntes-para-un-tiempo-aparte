@@ -29,7 +29,7 @@ const displayFullText = (id) => {
 table.innerHTML = filtered
   .map(
     (item) =>
-      `<tbody>
+      `<tbody class="table" id=${item.figure}>
         <tr id="${item.id}Row" class="openRow">
           <td class="table-image-cell">
             <img src='./../assets/media/hands/${
@@ -37,7 +37,7 @@ table.innerHTML = filtered
             }.jpeg' alt='hands playing catscraddle' class="table-image">
           </td>
           <td class="table-author">
-            <a id=${item.id}>${item.author}</a>
+            <a>${item.author}</a>
           </td>
           <td>${item.title}</td>
           ${
