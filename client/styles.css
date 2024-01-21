@@ -17,6 +17,7 @@
 
 body {
   background-color: #000000;
+  overflow-y: scroll;
 }
 
 canvas {
@@ -307,4 +308,19 @@ table {
     opacity: 1;
     margin-top: 94vh;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
 }

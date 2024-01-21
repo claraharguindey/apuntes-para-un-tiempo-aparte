@@ -42,9 +42,10 @@ const setNodes = (nodes) => {
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
       if (i > 0) {
+        console.log("entra");
         dots[i].connect(dots[i - 1].x, dots[i - 1].y);
       }
-    }, i * 100); // Cada nodo se pinta con un segundo de diferencia
+    }, i * 200);
   });
 };
 
@@ -201,10 +202,7 @@ async function playIntro() {
               lastPos.x = mouseX;
               lastPos.y = mouseY;
             }
-
-            started = true;
           }
-
           resolve();
         }, step.delay || index * 3000);
       })
@@ -212,6 +210,7 @@ async function playIntro() {
 
   await Promise.all(promises);
   fetchConstellation(setNodes);
+  started = true;
   sessionStorage.setItem("introPlayed", true);
 }
 
