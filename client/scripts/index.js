@@ -14,12 +14,14 @@ const shuffleArray = (array) => {
 };
 
 const shuffledContent = shuffleArray(content);
+let textToSave;
 
 const updateContent = () => {
   if (started) {
     ephemeralText.innerHTML = `<p class="ephemeralText">${shuffledContent[counter].text}</p>`;
     catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
-    apuntes.innerText += ` ${shuffledContent[counter].text}`;
+    textToSave = shuffledContent[counter].text;
+    apuntes.innerText += ` ${textToSave}`;
     figuresLink.href = `./pages/list.html#${shuffledContent[counter].figure}`;
 
     if (counter % shuffledContent.length !== 0) {

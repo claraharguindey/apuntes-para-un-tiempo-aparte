@@ -41,8 +41,8 @@ const setNodes = (nodes) => {
     setTimeout(() => {
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
+      apuntes.innerText += ` ${node.text}`;
       if (i > 0) {
-        console.log("entra");
         dots[i].connect(dots[i - 1].x, dots[i - 1].y);
       }
     }, i * 200);
@@ -217,6 +217,7 @@ async function playIntro() {
 const addNode = (dot) => {
   saveNode("http://localhost:3000/node", {
     ...dot,
+    text: textToSave,
   }).then(() => {
     console.log("saved node");
   });
