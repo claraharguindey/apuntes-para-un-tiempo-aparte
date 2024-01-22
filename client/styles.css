@@ -39,10 +39,6 @@ header {
   justify-content: space-between;
 }
 
-.fadeIn {
-  animation: fadeIn 26s linear forwards;
-}
-
 h1 {
   font-size: 24px;
   background: black;
@@ -53,15 +49,9 @@ ul {
   gap: 12px;
 }
 
-.list-item-link {
-  font-family: "apuntes";
-  text-decoration: underline;
-  font-size: 24px;
-  cursor: pointer;
-  background: #000000;
-}
+/** HOME **/
 
-.figure-link {
+.home-hands-wrapper {
   position: fixed;
   display: block;
   width: 100px;
@@ -79,22 +69,8 @@ ul {
   object-fit: contain;
 }
 
-.list-item {
-  text-decoration: underline;
-  list-style: none;
-}
-a img {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
-.footer {
-  position: fixed;
-  z-index: 1;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
+.fadeIn {
+  animation: fadeIn 26s linear forwards;
 }
 
 .ephemeralWrapper,
@@ -152,6 +128,49 @@ a img {
   column-count: 5;
 }
 
+#arrow {
+  display: none;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  left: 50%;
+  top: 90vh;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/** LIST **/
+
+.list-item-link {
+  font-family: "apuntes";
+  text-decoration: underline;
+  font-size: 24px;
+  cursor: pointer;
+  background: #000000;
+}
+
+.list-item {
+  text-decoration: underline;
+  list-style: none;
+}
+
 table {
   font-size: 16px;
   margin-top: 100px;
@@ -198,35 +217,8 @@ table {
   border-bottom: 1px solid white;
 }
 
-#arrow {
-  display: none;
-}
+/** ANIMATIONS **/
 
-.scroll-down {
-  position: absolute;
-  left: 50%;
-  top: 90vh;
-  display: block;
-  text-align: center;
-  font-size: 20px;
-  z-index: 100;
-  text-decoration: none;
-  text-shadow: 0;
-  width: 13px;
-  height: 13px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-  z-index: 9;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-  -moz-transform: translate(-50%, 0%) rotate(45deg);
-  transform: translate(-50%, 0%) rotate(45deg);
-  -webkit-animation: fade_move_down 4s ease-in-out infinite;
-  -moz-animation: fade_move_down 4s ease-in-out infinite;
-  animation: fade_move_down 4s ease-in-out infinite;
-}
-
-/*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -269,7 +261,6 @@ table {
   }
 }
 
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -308,6 +299,8 @@ table {
     margin-top: 94vh;
   }
 }
+
+/** SCROLLBAR **/
 
 ::-webkit-scrollbar {
   width: 5px;
