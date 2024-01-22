@@ -125,7 +125,16 @@ function mouseReleased() {
   }
 }
 
-const restart = () => (dots = []);
+const restart = async () =>
+  await removeConstellation("http://localhost:3000/constellation").then(
+    (isSuccess) => {
+      if (isSuccess) {
+        dots = [];
+        apuntes.innerText = "";
+        ephemeralText.innerHTML = "";
+      }
+    }
+  );
 
 const introSteps = [
   {
@@ -214,11 +223,8 @@ async function playIntro() {
   sessionStorage.setItem("introPlayed", true);
 }
 
-const addNode = (dot) => {
+const addNode = (dot) =>
   saveNode("http://localhost:3000/node", {
     ...dot,
     text: textToSave,
-  }).then(() => {
-    console.log("saved node");
   });
-};
