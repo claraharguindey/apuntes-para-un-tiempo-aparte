@@ -36,9 +36,10 @@ class Dot {
   }
 }
 
-const setNodes = (nodes) => {
+const setDots = (nodes) => {
   nodes.map((node, i) => {
     setTimeout(() => {
+      console.log({node})
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
       apuntes.innerText += ` ${node.text}`;
@@ -67,7 +68,7 @@ function setup() {
     apuntesWrapper.style.animation = "none";
     header.style.animation = "none";
     started = true;
-    fetchConstellation(setNodes);
+    fetchConstellation(setDots);
   } else {
     playIntro();
   }
@@ -218,7 +219,7 @@ async function playIntro() {
   );
 
   await Promise.all(promises);
-  fetchConstellation(setNodes);
+  fetchConstellation(setDots);
   started = true;
   sessionStorage.setItem("introPlayed", true);
 }
