@@ -15,11 +15,20 @@
                 rel="noopener noreferrer">Apuntes para un tiempo aparte</a></h1>
         <nav>
             <ul>
-                <li class="list-item"><button onclick="restart()" class="list-item-link">Reiniciar</button></li>
+                <li class="list-item"><button onclick="openModal()" class="list-item-link">Reiniciar</button></li>
                 <li class="list-item"><a class="list-item-link" href="./pages/list.html">Figuras</a></li>
             </ul>
         </nav>
     </header>
+    <div id="modal" class="overlay">
+        <div class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">Esta constelación, sus nodos y textos, ha sido dibujada colectivamente. <br>
+                Si pulsas <i>reiniciar</i>, este relato posible sobre <i>Apuntes para un tiempo aparte</i> será eliminado
+                y dará comienzo otro.</div>
+            <button onclick="restart()" class="modal-button">Reiniciar</button>
+        </div>
+    </div>
     <main class="main parallax">
         <div id="ephemeral" class="ephemeralWrapper"></div>
         <div id="intro" class="intro"></div>

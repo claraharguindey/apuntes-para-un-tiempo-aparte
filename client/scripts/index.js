@@ -2,6 +2,8 @@ const catscraddle = document.getElementById("catscraddle");
 const apuntes = document.getElementById("apuntes");
 const ephemeralText = document.getElementById("ephemeral");
 const figuresLink = document.getElementById("figuresLink");
+const modal = document.getElementById("modal");
+
 let counter = 1;
 
 const shuffleArray = (array) => {
@@ -31,3 +33,7 @@ const updateContent = () => {
     }
   }
 };
+
+const openModal = () => (modal.style.display = "block");
+
+const closeModal = () => (modal.style.display = "none");

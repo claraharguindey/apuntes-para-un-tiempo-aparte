@@ -37,6 +37,9 @@ class Dot {
 }
 
 const setDots = (nodes) => {
+  if (arrow.style.display !== "block") {
+    arrow.style.display = "block";
+  }
   nodes.map((node, i) => {
     setTimeout(() => {
       console.log({node})
@@ -133,6 +136,8 @@ const restart = async () =>
         dots = [];
         apuntes.innerText = "";
         ephemeralText.innerHTML = "";
+        arrow.style.display = "none";
+        closeModal();
       }
     }
   );
