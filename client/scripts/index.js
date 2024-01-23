@@ -3,7 +3,7 @@ const apuntes = document.getElementById("apuntes");
 const ephemeralText = document.getElementById("ephemeral");
 const figuresLink = document.getElementById("figuresLink");
 const modal = document.getElementById("modal");
-
+let image;
 let figureId;
 let counter = 1;
 
@@ -25,6 +25,7 @@ const updateContent = () => {
     catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
     textToSave = shuffledContent[counter].text;
     apuntes.innerText += ` ${textToSave}`;
+    gallery.innerHTML = `<img src="./assets/media/images/${image}" alt="">`;
     figureId = shuffledContent[counter].figure;
     figuresLink.href = `./pages/list.html#${figureId}`;
 
