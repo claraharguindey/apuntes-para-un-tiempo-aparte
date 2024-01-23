@@ -114,6 +114,7 @@ ul {
   border-bottom: 0;
   animation: fadeInScrollDown 28s linear forwards;
   margin-top: 94vh;
+  display: flex;
 }
 
 .hidden {
@@ -202,6 +203,23 @@ ul {
   cursor: pointer;
   background: #000000;
 }
+
+.gallery {
+  padding-right: 12px;
+}
+
+.gallery img {
+  width: 100px;
+  height: auto;
+  padding: 5px 0 0 5px;
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+    width: 300px;
+  }
+}
+
 /** LIST **/
 
 .list-article {
