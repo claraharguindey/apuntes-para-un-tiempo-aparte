@@ -210,6 +210,10 @@ ul {
   width: 80%;
 }
 
+.list-article a {
+  text-decoration: underline;
+}
+
 .list-article p {
   text-align: justify;
 }
