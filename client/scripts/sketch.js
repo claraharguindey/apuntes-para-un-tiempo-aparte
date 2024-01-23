@@ -42,9 +42,10 @@ const setDots = (nodes) => {
   }
   nodes.map((node, i) => {
     setTimeout(() => {
-      console.log({node})
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
+      catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
+      figuresLink.href = `./pages/list.html#${node.figure}`;
       apuntes.innerText += ` ${node.text}`;
       if (i > 0) {
         dots[i].connect(dots[i - 1].x, dots[i - 1].y);
@@ -233,4 +234,5 @@ const addNode = (dot) =>
   saveNode("http://localhost:3000/node", {
     ...dot,
     text: textToSave,
+    figure: figureId
   });
