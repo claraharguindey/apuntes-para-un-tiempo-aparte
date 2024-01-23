@@ -40,13 +40,20 @@ const setDots = (nodes) => {
   if (arrow.style.display !== "block") {
     arrow.style.display = "block";
   }
+
   nodes.map((node, i) => {
     setTimeout(() => {
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
-      catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
-      figuresLink.href = `./pages/list.html#${node.figure}`;
-      apuntes.innerText += ` ${node.text}`;
+
+      if (node.figure) {
+        catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
+        figuresLink.href = `./pages/list.html#${node.figure}`;
+      }
+
+      if (node.text) {
+        apuntes.innerText += ` ${node.text}`;
+      }
       if (i > 0) {
         dots[i].connect(dots[i - 1].x, dots[i - 1].y);
       }
@@ -234,5 +241,5 @@ const addNode = (dot) =>
   saveNode("http://localhost:3000/node", {
     ...dot,
     text: textToSave,
-    figure: figureId
+    figure: figureId,
   });
