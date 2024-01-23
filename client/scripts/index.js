@@ -4,6 +4,7 @@ const ephemeralText = document.getElementById("ephemeral");
 const figuresLink = document.getElementById("figuresLink");
 const modal = document.getElementById("modal");
 let image;
+let credits;
 let figureId;
 let counter = 1;
 
@@ -25,7 +26,20 @@ const updateContent = () => {
     catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
     textToSave = shuffledContent[counter].text;
     apuntes.innerText += ` ${textToSave}`;
-    gallery.innerHTML += `<img src="./assets/media/images/${image}" alt="">`;
+    image = shuffledContent[counter].image;
+    credits = shuffledContent[counter].credits;
+    if (image && gallery.childElementCount <= 10) {
+      gallery.innerHTML += `<figure>
+        <img src="./assets/media/images/${image}" alt="Imagen del evento" />
+        ${
+          credits
+            ? `<figcaption>
+              <span class="caption">Crédito: ${credits}</span>
+            </figcaption>`
+            : ""
+        }
+      </figure>`;
+    }
     figureId = shuffledContent[counter].figure;
     figuresLink.href = `./pages/list.html#${figureId}`;
 

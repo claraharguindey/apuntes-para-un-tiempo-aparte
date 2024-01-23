@@ -41,6 +41,7 @@ const setDots = (nodes) => {
     if (arrow.style.display !== "block" && i === 1) {
       arrow.style.display = "block";
     }
+
     setTimeout(() => {
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
@@ -53,6 +54,24 @@ const setDots = (nodes) => {
       if (node.text) {
         apuntes.innerText += ` ${node.text}`;
       }
+
+      if (node?.image) {
+        if (gallery.childElementCount <= 10) {
+          gallery.innerHTML += `<figure>
+          <img src="./assets/media/images/${
+            node?.image
+          }" alt="Imagen del evento" />
+          ${
+            node?.credits
+              ? `<figcaption>
+                <span class="caption">Crédito: ${node.credits}</span>
+              </figcaption>`
+              : ""
+          }
+        </figure>`;
+        }
+      }
+
       if (i > 0) {
         dots[i].connect(dots[i - 1].x, dots[i - 1].y);
       }
@@ -144,6 +163,7 @@ const restart = async () =>
         apuntes.innerText = "";
         ephemeralText.innerHTML = "";
         arrow.style.display = "none";
+        gallery.innerHTML = "";
         closeModal();
       }
     }
@@ -241,4 +261,6 @@ const addNode = (dot) =>
     ...dot,
     text: textToSave,
     figure: figureId,
+    image,
+    credits,
   });

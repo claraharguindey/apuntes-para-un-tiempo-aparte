@@ -440,7 +440,7 @@ const content = [
     text: "bailan/ y van por libre...",
     author: "Fefa Vila",
     title: "Sound Cuts",
-    image: "SOUNDCUTS3.jpg",
+    image: "SOUNDCUTS3.jpeg",
     credits: "Diego Lopez Bueno",
     fullText:
       "<br>[3-FINAL. 2']<br><br>Romper en mil pedazos<br>Una ventana<br><i>Interrumpir el ritmo,<br>el paso,<br>la respiración<br>Detener el tiempo<br>Robar lo que ya se tiene<br>Tropezar en la huida</i><br>Estallan y corren contra las puertas<br>Era tan frágil...<br>Era tan frágil...<br>Ensordecedor<br>El ruido de lo que se rompe<br>La plusvalía<br>El valor de cambio<br>La nación<br>El estado<br>El sexo<br>El género<br>El Museo<br>Y, ¿La libertad?<br>La libertad<br>Se la toman<br>Se la beben<br>la intercambian<br>La regalan<br>Fracasar torpemente<br>Pero fracasad<br>Alboroto<br>Alegría<br>Baile<br>Bailan<br>y van por libre<br>Una Multitud de Amantes BAILANDO<br>NUNCA Puede Perder",
@@ -451,7 +451,7 @@ const content = [
     text: "nos suspenden en un tiempo elástico, plegado, y exploran otras duraciones posibles del lenguaje desde la poesía y el sonido...",
     author: "Helena Mariño, Enri La Forêt",
     title: "Esta línea es un espacio recíproco de intercambio",
-    image: "ESTALINEA_1.jpg",
+    image: "ESTA_LINEA.jpg",
   },
   {
     id: 51,
@@ -459,7 +459,7 @@ const content = [
     text: "los textos que generen presente y presencia, y una densidad afectiva entre el cuerpo propio y el colectivo...",
     author: "Helena Mariño, Enri La Forêt",
     title: "Esta línea es un espacio recíproco de intercambio",
-    image: "ESTALINEA_2.jpg",
+    image: "ESTA_LINEA2.jpg",
   },
   {
     id: 52,
@@ -467,7 +467,7 @@ const content = [
     text: "problema número 7/ ¿cómo hablo de mí, cómo hablo de ti, cómo hablo de todas nosotras sin hablar por encima de tu voz?.",
     author: "Helena Mariño, Enri La Forêt",
     title: "Esta línea es un espacio recíproco de intercambio",
-    image: "ESTALINEA_3.jpg",
+    image: "ESTA_LINEA3.jpg",
   },
   {
     id: 53,
@@ -475,7 +475,7 @@ const content = [
     text: "así, con tanta prisa, andando a la carretera, no sé de qué vestirme, de qué me quieres ver...",
     author: "Helena Mariño, Enri La Forêt",
     title: "Esta línea es un espacio recíproco de intercambio",
-    image: "ESTALINEA_4.jpg",
+    image: "ESTA_LINEA4.jpg",
   },
   {
     id: 54,
@@ -524,7 +524,7 @@ const content = [
     text: "el Sueño como la oportunidad de romper la linealidad temporal de la razón que se piensa como progreso...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO1.jpg",
+    image: "SUENO1.jpeg",
     credits: "Diego López Bueno",
   },
   {
@@ -533,7 +533,7 @@ const content = [
     text: "delirios que inician la construcción y deconstrucción de una narrativa...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO2.jpg",
+    image: "SUENO2.jpeg",
     credits: "Diego López Bueno",
   },
   {
@@ -542,7 +542,7 @@ const content = [
     text: "el delirio tiene el poder de alterar el tiempo, las percepciones lineales, las limitaciones de las normas sociales...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO3.jpg",
+    image: "SUENO3.jpeg",
     credits: "Diego López Bueno",
   },
   {
@@ -764,7 +764,7 @@ const content = [
     text: "la defensa del deambular como método de reflexión y búsqueda de nuevas perspectivas...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR1.jpg",
+    image: "CAMINAR1.jpeg",
     credits: "Diego López Bueno"
   },
   {
@@ -773,7 +773,7 @@ const content = [
     text: "pero yo ya había puesto en marcha mi propia magia defensiva, la rutina de resolver los problemas caminando por la ciudad, cazando al vuelo incidentes al azar...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR2.jpg",
+    image: "CAMINAR2.jpeg",
     credits: "Diego López Bueno"
   },
   {
@@ -782,7 +782,7 @@ const content = [
     text: "el parque del Retiro como umbral a otros tiempos, pasados y futuros...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR3.jpg",
+    image: "CAMINAR3.jpeg",
     credits: "Diego López Bueno"
   },
   {

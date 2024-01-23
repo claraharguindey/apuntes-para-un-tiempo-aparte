@@ -213,13 +213,23 @@ ul {
   height: auto;
   padding: 5px 0 0 5px;
   filter: grayscale(100%);
+  
+  & + figcaption {
+    display: none;
+  }
 
   &:hover {
     filter: grayscale(0%);
     width: 300px;
+    & + figcaption {
+      display: flex;
+    }
   }
 }
 
+.caption {
+  font-size: 10px;
+}
 /** LIST **/
 
 .list-article {
