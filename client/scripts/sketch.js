@@ -37,11 +37,10 @@ class Dot {
 }
 
 const setDots = (nodes) => {
-  if (arrow.style.display !== "block") {
-    arrow.style.display = "block";
-  }
-
   nodes.map((node, i) => {
+    if (arrow.style.display !== "block" && i === 1) {
+      arrow.style.display = "block";
+    }
     setTimeout(() => {
       dots.push(new Dot(node.x, node.y));
       dots[i].plot();
