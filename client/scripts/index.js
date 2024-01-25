@@ -7,6 +7,7 @@ let image;
 let credits;
 let figureId;
 let counter = 1;
+let imgCounter = 0;
 
 const shuffleArray = (array) => {
   const newArray = [...array];
@@ -28,17 +29,28 @@ const updateContent = () => {
     apuntes.innerText += ` ${textToSave}`;
     image = shuffledContent[counter].image;
     credits = shuffledContent[counter].credits;
-    if (image && gallery.childElementCount <= 10) {
-      gallery.innerHTML += `<figure>
-        <img src="./assets/media/images/${image}" alt="Imagen del evento" />
-        ${
-          credits
-            ? `<figcaption>
-              <span class="caption">Crédito: ${credits}</span>
-            </figcaption>`
-            : ""
-        }
-      </figure>`;
+    if (image) {
+      if (gallery.childElementCount < 10) {
+        gallery.innerHTML += `<figure>
+          <img src="./assets/media/images/${image}" alt="Imagen del evento" />
+          <figcaption>
+            <span class="caption">${credits ? `Crédito: ${credits}` : ""}</span>
+          </figcaption>
+        </figure>`;
+      } else {
+        const indexToChange = imgCounter % 10;
+
+        gallery.children
+          .item(indexToChange)
+          .querySelector("img").src = `./assets/media/images/${image}`;
+        gallery.children
+          .item(indexToChange)
+          .querySelector(".caption").innerText = credits
+          ? `Crédito: ${credits}`
+          : "";
+
+        imgCounter++;
+      }
     }
     figureId = shuffledContent[counter].figure;
     figuresLink.href = `./pages/list.html#${figureId}`;
@@ -47,6 +59,7 @@ const updateContent = () => {
       counter++;
     } else {
       counter = 1;
+      imgCounter = 1;
     }
   }
 };

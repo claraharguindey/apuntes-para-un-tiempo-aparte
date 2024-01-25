@@ -37,6 +37,8 @@ class Dot {
 }
 
 const setDots = (nodes) => {
+  let imgCounter = 0;
+
   nodes.map((node, i) => {
     if (arrow.style.display !== "block" && i === 1) {
       arrow.style.display = "block";
@@ -56,19 +58,30 @@ const setDots = (nodes) => {
       }
 
       if (node?.image) {
-        if (gallery.childElementCount <= 10) {
+        if (gallery.childElementCount < 10) {
           gallery.innerHTML += `<figure>
-          <img src="./assets/media/images/${
-            node?.image
-          }" alt="Imagen del evento" />
-          ${
-            node?.credits
-              ? `<figcaption>
-                <span class="caption">Crédito: ${node.credits}</span>
-              </figcaption>`
-              : ""
-          }
-        </figure>`;
+            <img src="./assets/media/images/${
+              node?.image
+            }" alt="Imagen del evento" />
+            <figcaption>
+              <span class="caption">${
+                node?.credits ? `Crédito: ${node.credits}` : ""
+              }</span>
+            </figcaption>
+          </figure>`;
+        } else {
+          const indexToChange = imgCounter % 10;
+
+          gallery.children
+            .item(indexToChange)
+            .querySelector("img").src = `./assets/media/images/${node.image}`;
+          gallery.children
+            .item(indexToChange)
+            .querySelector(".caption").innerText = node.credits
+            ? `Crédito: ${node.credits}`
+            : "";
+
+          imgCounter++;
         }
       }
 
