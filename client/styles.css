@@ -125,8 +125,51 @@ ul {
   animation: fadeIn 60s linear forwards;
 }
 
+.apuntesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .apuntes {
-  column-count: 5;
+  column-count: 4;
+}
+
+.gallery {
+  padding-right: 12px;
+  width: 100%;
+  display: flex;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 0;
+  float: left;
+}
+
+.apuntes img {
+  object-fit: cover;
+  width: 100px;
+  height: auto;
+  filter: grayscale(100%);
+
+  & + figcaption {
+    display: none;
+    margin-top: 4px;
+  }
+
+  &:hover {
+    filter: grayscale(0%);
+    width: 300px;
+    & + figcaption {
+      display: flex;
+    }
+  }
+}
+
+.caption {
+  font-size: 10px;
 }
 
 #arrow {
@@ -205,32 +248,6 @@ ul {
   background: #000000;
 }
 
-.gallery {
-  padding-right: 12px;
-}
-
-.gallery img {
-  width: 100px;
-  height: auto;
-  padding: 5px 0 0 5px;
-  filter: grayscale(100%);
-  
-  & + figcaption {
-    display: none;
-  }
-
-  &:hover {
-    filter: grayscale(0%);
-    width: 300px;
-    & + figcaption {
-      display: flex;
-    }
-  }
-}
-
-.caption {
-  font-size: 10px;
-}
 /** LIST **/
 
 .list-article {
