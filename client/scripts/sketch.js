@@ -37,48 +37,31 @@ class Dot {
 }
 
 const setDots = (nodes) => {
-  let imgCounter = 0;
-
   nodes.forEach((node, i) => {
     if (i < nodes.length - 5) {
       dots.push(new Dot(node.x, node.y));
       dots[dots.length - 1].plot();
-
+console.log(node)
       if (node.figure) {
         catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
         figuresLink.href = `./pages/list.html#${node.figure}`;
       }
 
       if (node.text) {
-        apuntes.innerText += ` ${node.text}`;
+        apuntes.innerHTML += ` ${node.text}`;
       }
 
       if (node?.image) {
-        if (gallery.childElementCount < 10) {
-          gallery.innerHTML += `<figure>
-            <img src="./assets/media/images/${
-              node?.image
-            }" alt="Imagen del evento" />
-            <figcaption>
-              <span class="caption">${
-                node?.credits ? `Crédito: ${node.credits}` : ""
-              }</span>
-            </figcaption>
-          </figure>`;
-        } else {
-          const indexToChange = imgCounter % 10;
-
-          gallery.children
-            .item(indexToChange)
-            .querySelector("img").src = `./assets/media/images/${node.image}`;
-          gallery.children
-            .item(indexToChange)
-            .querySelector(".caption").innerText = node.credits
-            ? `Crédito: ${node.credits}`
-            : "";
-
-          imgCounter++;
-        }
+        apuntes.innerHTML += `<figure>
+          <img src="./assets/media/images/${
+            node?.image
+          }" alt="Imagen del evento" />
+          <figcaption>
+            <span class="caption">${
+              node?.credits ? `Crédito: ${node.credits}` : ""
+            }</span>
+          </figcaption>
+        </figure>`;
       }
 
       if (i > 0) {
@@ -98,35 +81,20 @@ const setDots = (nodes) => {
         }
 
         if (node.text) {
-          apuntes.innerText += ` ${node.text}`;
+          apuntes.innerHTML += ` ${node.text}`;
         }
 
         if (node?.image) {
-          if (gallery.childElementCount < 10) {
-            gallery.innerHTML += `<figure>
-              <img src="./assets/media/images/${
-                node?.image
-              }" alt="Imagen del evento" />
-              <figcaption>
-                <span class="caption">${
-                  node?.credits ? `Crédito: ${node.credits}` : ""
-                }</span>
-              </figcaption>
-            </figure>`;
-          } else {
-            const indexToChange = imgCounter % 10;
-
-            gallery.children
-              .item(indexToChange)
-              .querySelector("img").src = `./assets/media/images/${node.image}`;
-            gallery.children
-              .item(indexToChange)
-              .querySelector(".caption").innerText = node.credits
-              ? `Crédito: ${node.credits}`
-              : "";
-
-            imgCounter++;
-          }
+          apuntes.innerHTML += `<figure>
+            <img src="./assets/media/images/${
+              node?.image
+            }" alt="Imagen del evento" />
+            <figcaption>
+              <span class="caption">${
+                node?.credits ? `Crédito: ${node.credits}` : ""
+              }</span>
+            </figcaption>
+          </figure>`;
         }
 
         if (i > 0) {
@@ -221,10 +189,9 @@ const restart = async () =>
     (isSuccess) => {
       if (isSuccess) {
         dots = [];
-        apuntes.innerText = "";
+        apuntes.innerHTML = "";
         ephemeralText.innerHTML = "";
         arrow.style.display = "none";
-        gallery.innerHTML = "";
         closeModal();
       }
     }
