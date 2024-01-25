@@ -12,7 +12,7 @@ const content = [
     text: "viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    image: "INSTITUTO1.jpeg",
+    image: "INSTITUTO1.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -28,7 +28,7 @@ const content = [
     text: "un agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    image: "INSTITUTO4.jpeg",
+    image: "INSTITUTO4.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -37,7 +37,7 @@ const content = [
     text: "somos, cada cual, tiempos...",
     author: "Javier Bassas y Raquel Friera",
     title: "Instituto del Tiempo Suspendido",
-    image: "INSTITUTO3.jpeg",
+    image: "INSTITUTO3.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -46,7 +46,7 @@ const content = [
     text: "la crononormatividad es un modo de implantación, una técnica por la que las fuerzas institucionales llegan a parecer hechos somáticos...",
     author: "Elisabeth Freeman",
     title: "Time Binds: Queer Temporalities, Queer Histories",
-    image: "BIBLIOGRAFIA.jpeg",
+    image: "BIBLIOGRAFIA.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -309,7 +309,7 @@ const content = [
     text: "el Parque del Retiro ofrece la oportunidad de explorar otras temporalidades no regladas...",
     author: "Roberto Martínez",
     title: "Solar 2. El Parque",
-    image: "SOLAR1.jpeg",
+    image: "SOLAR1.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores"
   },
   {
@@ -318,7 +318,7 @@ const content = [
     text: "las semillas y las células, las raíces y los pies, las ramas y los brazos, el tronco y la columna vertebral, las hojas y las manos...",
     author: "Roberto Martínez",
     title: "Solar 2. El Parque",
-    image: "SOLAR2.jpeg",
+    image: "SOLAR2.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores"
   },
   {
@@ -327,7 +327,7 @@ const content = [
     text: "expansión del centro hacia fuera/ HACIA AFUERA/ EL SOSTENER, EQUILIBRIO/ sujetar/ ZAHORÍ...",
     author: "Roberto Martínez",
     title: "Solar 2. El Parque",
-    image: "SOLAR4.jpeg",
+    image: "SOLAR4.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores"
   },
   {
@@ -336,7 +336,7 @@ const content = [
     text: "lo sombrío = donde la vida pasa sin luz/ las piedras/ suelo, debajo del suelo/ gnomos...",
     author: "Roberto Martínez",
     title: "Solar 2. El Parque",
-    image: "SOLAR5.jpeg",
+    image: "SOLAR5.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores"
   },
   {
@@ -346,7 +346,7 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    image: "NINIAS1.jpeg",
+    image: "NINIAS1.jpg",
     credits: "Isaac Satnof"
   },
   {
@@ -356,7 +356,7 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    image: "NINIAS2.jpeg",
+    image: "NINIAS2.jpg",
     credits: "Isaac Satnof"
   },
   {
@@ -366,7 +366,7 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    image: "NINIAS3.jpeg",
+    image: "NINIAS3.jpg",
     credits: "Isaac Satnof"
   },
   {
@@ -376,7 +376,7 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    image: "NINIAS4.jpeg",
+    image: "NINIAS4.jpg",
     credits: "Isaac Satnof"
   },
   {
@@ -395,7 +395,7 @@ const content = [
     text: "invita a pensar en formas alternativas de existir que las comunidades colonizadas construyen más allá de las que les son impuestas...",
     author: "Husos Arquitecturas, Nayare Soledad Otorongx, Karessa M. Ramos",
     title: "Re-existencias Bayanihan",
-    image: "BAYANIHAN.jpeg",
+    image: "BAYANIHAN.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -404,7 +404,7 @@ const content = [
     text: "los tiempos coloniales no conciernen sólo al pasado; siguen vigentes hoy en día...",
     author: "Husos Arquitecturas, Nayare Soledad Otorongx, Karessa M. Ramos",
     title: "Re-existencias Bayanihan",
-    image: "BAYANIHAN2.jpeg",
+    image: "BAYANIHAN2.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -413,7 +413,7 @@ const content = [
     text: 'cuestionar un entendimiento de las ideas "tiempo" y "nosotras" en los procesos de diseño...',
     author: "Husos Arquitecturas, Nayare Soledad Otorongx, Karessa M. Ramos",
     title: "Re-existencias Bayanihan",
-    image: "BAYANIHAN3.jpeg",
+    image: "BAYANIHAN3.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -440,7 +440,7 @@ const content = [
     text: "bailan/ y van por libre...",
     author: "Fefa Vila",
     title: "Sound Cuts",
-    image: "SOUNDCUTS3.jpeg",
+    image: "SOUNDCUTS3.jpg",
     credits: "Diego Lopez Bueno",
     fullText:
       "<br>[3-FINAL. 2']<br><br>Romper en mil pedazos<br>Una ventana<br><i>Interrumpir el ritmo,<br>el paso,<br>la respiración<br>Detener el tiempo<br>Robar lo que ya se tiene<br>Tropezar en la huida</i><br>Estallan y corren contra las puertas<br>Era tan frágil...<br>Era tan frágil...<br>Ensordecedor<br>El ruido de lo que se rompe<br>La plusvalía<br>El valor de cambio<br>La nación<br>El estado<br>El sexo<br>El género<br>El Museo<br>Y, ¿La libertad?<br>La libertad<br>Se la toman<br>Se la beben<br>la intercambian<br>La regalan<br>Fracasar torpemente<br>Pero fracasad<br>Alboroto<br>Alegría<br>Baile<br>Bailan<br>y van por libre<br>Una Multitud de Amantes BAILANDO<br>NUNCA Puede Perder",
@@ -524,7 +524,7 @@ const content = [
     text: "el Sueño como la oportunidad de romper la linealidad temporal de la razón que se piensa como progreso...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO1.jpeg",
+    image: "SUENO1.jpg",
     credits: "Diego López Bueno",
   },
   {
@@ -533,7 +533,7 @@ const content = [
     text: "delirios que inician la construcción y deconstrucción de una narrativa...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO2.jpeg",
+    image: "SUENO2.jpg",
     credits: "Diego López Bueno",
   },
   {
@@ -542,7 +542,7 @@ const content = [
     text: "el delirio tiene el poder de alterar el tiempo, las percepciones lineales, las limitaciones de las normas sociales...",
     author: "Elise Florenty, Marcel Türkowsky",
     title: "Tiempo y delirio; sueño y resistencia",
-    image: "SUENO3.jpeg",
+    image: "SUENO3.jpg",
     credits: "Diego López Bueno",
   },
   {
@@ -565,7 +565,7 @@ const content = [
     text: "indagar en torno a la disolución de nuestro tiempo desde la figura conceptual de la ruina...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    image: "AUNNO.jpeg",
+    image: "AUNNO.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -574,7 +574,7 @@ const content = [
     text: "la ruina disuelve el tiempo para nosotrxs, nos permite empezar después del final: escuchar los restos, lo que queda pese a todo...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    image: "AUNNO.jpeg",
+    image: "AUNNO.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -583,7 +583,7 @@ const content = [
     text: "un tiempo que es, a la vez, futural y espectral...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    image: "AUNNO2.jpeg",
+    image: "AUNNO2.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -592,7 +592,7 @@ const content = [
     text: "emerger un tercer lugar transitorio, mutante y anacrónico...",
     author: "Paz Rojo",
     title: "Ha sido aún no, todavía",
-    image: "AUNNO3.jpeg",
+    image: "AUNNO3.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -610,7 +610,7 @@ const content = [
     text: "una investigación sobre otras temporalidades posibles...",
     author: "Julieth Morales",
     title: "ISHUWEI MØSIK KØSHPUNINUK (Danza del espíritu femenino)",
-    image: "JULIETH_1.jpeg",
+    image: "JULIETH_1.jpg",
     credits: "Kvet Nguyen",
   },
   {
@@ -660,7 +660,7 @@ const content = [
     text: "“¿qué sueles hacer en esta hora de pausa?”...",
     author: "elii [oficina de arquitectura], Orkan Telhan",
     title: "Restos en suspenso, todavía",
-    image: "RESTOS1.jpeg",
+    image: "RESTOS1.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
 
   },
@@ -670,7 +670,7 @@ const content = [
     text: "paisajes ralentizados en los que se suspende su degradación, su mutación, su animación...",
     author: "elii [oficina de arquitectura], Orkan Telhan",
     title: "Restos en suspenso, todavía",
-    image: "RESTOS2.jpeg",
+    image: "RESTOS2.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -679,7 +679,7 @@ const content = [
     text: "preservar esta mezcla fluida en una suerte de cápsulas del tiempo a -4ºC...",
     author: "elii [oficina de arquitectura], Orkan Telhan",
     title: "Restos en suspenso, todavía",
-    image: "RESTOS3.jpeg",
+    image: "RESTOS3.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
@@ -688,7 +688,7 @@ const content = [
     text: '"conversaciones" prolongadas entre los microorganismos y las personas para evidenciar una temporalidad que no pertenece a nadie...',
     author: "elii [oficina de arquitectura], Orkan Telhan",
     title: "Restos en suspenso, todavía",
-    image: "RESTOS4.jpeg",
+    image: "RESTOS4.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
     fullText:
       "Aquí, los microbios de esos participantes anónimos, mezclados en gruesas capas de tarta de chocolate, se convierten en <i>paisajes ralentizados en los que se suspende su degradación, su mutación, su animación.</i> Pasan a ser unas 'conversaciones' prolongadas entre microorganismos y personas, desplegando una temporalidad distinta que no le pertenece a nadie. Al menos, mientras dure la refrigeración, porque estos otros encuentros en un nuevo tiempo suspendido necesitan ser técnicamente preservados. <br><br>Después, lo que queda se estas conversaciones y restos de comida compartida, que en su momento han formado parte de diferentes contextos, profesiones, clases sociales y distintas micro y macro visiones del mundo, es situado dentro de una red de refrigeradores programada para <i>preservar esta mezcla fluida en una suerte de cápsulas del tiempo a -4ºC.</i>",
@@ -764,7 +764,7 @@ const content = [
     text: "la defensa del deambular como método de reflexión y búsqueda de nuevas perspectivas...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR1.jpeg",
+    image: "CAMINAR1.jpg",
     credits: "Diego López Bueno"
   },
   {
@@ -773,7 +773,7 @@ const content = [
     text: "pero yo ya había puesto en marcha mi propia magia defensiva, la rutina de resolver los problemas caminando por la ciudad, cazando al vuelo incidentes al azar...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR2.jpeg",
+    image: "CAMINAR2.jpg",
     credits: "Diego López Bueno"
   },
   {
@@ -782,7 +782,7 @@ const content = [
     text: "el parque del Retiro como umbral a otros tiempos, pasados y futuros...",
     author: "Brutalistas (Servando Rocha y David Bizarro)",
     title: "Caminar es magia defensiva",
-    image: "CAMINAR3.jpeg",
+    image: "CAMINAR3.jpg",
     credits: "Diego López Bueno"
   },
   {
@@ -829,7 +829,7 @@ const content = [
     text: "todos entendemos que el tiempo es un convencionalismo: no es lo mismo que para un agricultor de la Edad Media, que lo medía en las estaciones...",
     author: "Brutalistas (Carlos Arévalo, David Bizarro, Servando Rocha)",
     title: "TIEMPO",
-    image: "BRUTALISTAS.jpeg",
+    image: "BRUTALISTAS.jpg",
   },
   {
     id: 105,
@@ -853,7 +853,7 @@ const content = [
     title: "Instituto del Tiempo Suspendido",
     fullText:
       "La página del Instituto del Tiempo Suspendido es una página web, claro, y también otras cosas. Quizá es un <i>agujero negro dentro de internet porque atrae y altera el tiempo de quien la visita</i>: si entras y viajas por sus pestañas, sentirás que lo que ven tus ojos, tu relación con el tiempo, la política del mundo y del universo entero no volverán a ser lo que han sido hasta ese momento. También es quizá -no es una alucinación, es real, es personal, es político- un espacio tridimensional: esa página es la “sede virtual” del Instituto del Tiempo Suspendido que refleja las diferentes “sedes físicas” que el ITS ha desplegado en diferentes museos y centros culturales. Y esa página web quizá sería también -como algo alguien que te estaba esperando...- un pecio ante el naufragio temporal de nuestras vidas en pleno neoliberalismo: una barca de salvamento ante el productivismo, un tablón que nos mantendrá a flote para llegar a un lugar (una isla paradisíaca, una ciudad, tu propia casa) donde se suspende el tiempo y se experiencia la cronodiversidad... <br><br>El ITS se orienta, por tanto, <i>hacia la reapropiación del tiempo expropiado, robado, perdido por todas las prácticas que reducen la cronodiversidad constitutiva de los seres</i> (humanos animales vegetales): <i>somos, cada cual, tiempos</i>. <br><br> Como medio de investigación conceptual y de formalizacion estética, el ITS apunta efectivamente a suspender el tiempo, es decir, <i>desnaturalizar la experiencia del tiempo lineal, cronométrico, homogéneo, télico, productivo y aceleracionista de nuestra época.</i> Tal es “la hora occidental”. Se trata, en definitiva, de dar un paso más en el camino de los formatos artísticos, avanzar originalmente en la política de las prácticas estéticas: fundar un instituto, un anti-instituto o un destituto para suspender los ritmos impuestos por la época que nos ha tocado vivir, el neoliberalismo. Es decir, para reapropiarse del tiempo expropiado en el estrés laboral (“La vida no me da”), el falso ocio digital (“Así desconecto”), el extractivismo planetario (“Maquinizar lo vivo y la tierra”), la presión familiar y social que nos impone “no perder tiempo”. <br>Como un instituto (que es también un meta-instituto, un destituto, un antistituto, etc.), el ITS tiene sus “estatutos fundacionales”. Podrían ser diferentes, o quizá no tanto hoy en día, colocados uno después del otro, pero todos de igual importancia: “1. El Instituto del Tiempo Suspendido se funda en un momento preciso de una época precisa, en el llamado neoliberalismo, pero <i>viene de tan lejos en el pasado e incumbe tanto al futuro que su fundación se encuentra, suspendida, dentro y fuera del tiempo</i>.” <br> El ITS entiende el tiempo suspendido de infinitas maneras, pero apuntando siempre y en cualquier caso a maneras de vivir el tiempo que contestan la crononormatividad. La crononormatividad actual está basada en una concepción lineal, homogénea, neutra, cuantitativa, télica, productivista del tiempo: esos ritmos extenuantes y maquinales que se venden como necesarios y naturales.",
-    image: "INSTITUTO2.jpeg",
+    image: "INSTITUTO2.jpg",
     credits: "Museo Reina Sofía. Fotografía: Joaquín Cortés / Román Lores",
   },
   {
