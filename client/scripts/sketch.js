@@ -39,14 +39,10 @@ class Dot {
 const setDots = (nodes) => {
   let imgCounter = 0;
 
-  nodes.map((node, i) => {
-    if (arrow.style.display !== "block" && i === 1) {
-      arrow.style.display = "block";
-    }
-
-    setTimeout(() => {
+  nodes.forEach((node, i) => {
+    if (i < nodes.length - 5) {
       dots.push(new Dot(node.x, node.y));
-      dots[i].plot();
+      dots[dots.length - 1].plot();
 
       if (node.figure) {
         catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
@@ -86,9 +82,61 @@ const setDots = (nodes) => {
       }
 
       if (i > 0) {
-        dots[i].connect(dots[i - 1].x, dots[i - 1].y);
+        dots[dots.length - 1].connect(
+          dots[dots.length - 2].x,
+          dots[dots.length - 2].y
+        );
       }
-    }, i * 200);
+    } else {
+      setTimeout(() => {
+        dots.push(new Dot(node.x, node.y));
+        dots[dots.length - 1].plot();
+
+        if (node.figure) {
+          catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
+          figuresLink.href = `./pages/list.html#${node.figure}`;
+        }
+
+        if (node.text) {
+          apuntes.innerText += ` ${node.text}`;
+        }
+
+        if (node?.image) {
+          if (gallery.childElementCount < 10) {
+            gallery.innerHTML += `<figure>
+              <img src="./assets/media/images/${
+                node?.image
+              }" alt="Imagen del evento" />
+              <figcaption>
+                <span class="caption">${
+                  node?.credits ? `Crédito: ${node.credits}` : ""
+                }</span>
+              </figcaption>
+            </figure>`;
+          } else {
+            const indexToChange = imgCounter % 10;
+
+            gallery.children
+              .item(indexToChange)
+              .querySelector("img").src = `./assets/media/images/${node.image}`;
+            gallery.children
+              .item(indexToChange)
+              .querySelector(".caption").innerText = node.credits
+              ? `Crédito: ${node.credits}`
+              : "";
+
+            imgCounter++;
+          }
+        }
+
+        if (i > 0) {
+          dots[dots.length - 1].connect(
+            dots[dots.length - 2].x,
+            dots[dots.length - 2].y
+          );
+        }
+      }, (i - (nodes.length - 5)) * 500);
+    }
   });
 };
 

@@ -346,7 +346,7 @@ const content = [
     author:
       "Las Niñas (Belial, Berrenga, La Sussi, Agu de Barbate, Rosario Molina, Laca Udilla, Carvento, Pakita)",
     title: "Vida de las niñas",
-    image: "NINIAS1.jpg",
+    image: "NINIAS.jpg",
     credits: "Isaac Satnof"
   },
   {
@@ -610,7 +610,7 @@ const content = [
     text: "una investigación sobre otras temporalidades posibles...",
     author: "Julieth Morales",
     title: "ISHUWEI MØSIK KØSHPUNINUK (Danza del espíritu femenino)",
-    image: "JULIETH_1.jpg",
+    image: "JULIETH.jpg",
     credits: "Kvet Nguyen",
   },
   {
