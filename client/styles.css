@@ -314,6 +314,10 @@ table {
   border-bottom: 1px solid white;
 }
 
+.footer-logo {
+  width: 300px;
+  margin: 32px;
+}
 /** ANIMATIONS **/
 
 @-webkit-keyframes fade_move_down {

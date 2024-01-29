@@ -41,7 +41,6 @@ const setDots = (nodes) => {
     if (i < nodes.length - 5) {
       dots.push(new Dot(node.x, node.y));
       dots[dots.length - 1].plot();
-console.log(node)
       if (node.figure) {
         catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
         figuresLink.href = `./pages/list.html#${node.figure}`;
@@ -277,9 +276,10 @@ async function playIntro() {
         }, step.delay || index * 3000);
       })
   );
-
+  setTimeout(() => {
+    fetchConstellation(setDots);
+  }, (introSteps.length + 1) * 3000);
   await Promise.all(promises);
-  fetchConstellation(setDots);
   started = true;
   sessionStorage.setItem("introPlayed", true);
 }

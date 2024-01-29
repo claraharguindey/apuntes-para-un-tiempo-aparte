@@ -19,7 +19,6 @@ const filtered = content
 const displayFullText = (id) => {
   document.getElementById(`${id}Text`).classList.toggle("table-accordion-body");
   document.getElementById(`${id}Row`).classList.toggle("openRow");
-  console.log(document.getElementById(`${id}button`))
   document.getElementById(`${id}button`).innerText =
     document.getElementById(`${id}button`).innerText === "Ver texto completo"
       ? "Cerrar"
