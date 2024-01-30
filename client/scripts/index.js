@@ -37,7 +37,8 @@ const updateContent = () => {
       </figure>`;
     }
     figureId = shuffledContent[counter].figure;
-    figuresLink.href = `./pages/list.html#${figureId}`;
+    figuresLink.href = `/list#${figureId}`;
+    figuresLink.onclick = "navigate(event)";
 
     if (counter % shuffledContent.length !== 0) {
       counter++;

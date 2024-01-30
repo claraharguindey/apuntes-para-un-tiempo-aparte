@@ -43,7 +43,8 @@ const setDots = (nodes) => {
       dots[dots.length - 1].plot();
       if (node.figure) {
         catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
-        figuresLink.href = `./pages/list.html#${node.figure}`;
+        figuresLink.href = `/list#${node.figure}`;
+        figuresLink.onclick = "navigate(event)";
       }
 
       if (node.text) {
@@ -76,7 +77,8 @@ const setDots = (nodes) => {
 
         if (node.figure) {
           catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
-          figuresLink.href = `./pages/list.html#${node.figure}`;
+          figuresLink.href = `/list#${node.figure}`;
+          figuresLink.onclick = "navigate(event)";
         }
 
         if (node.text) {
@@ -184,17 +186,15 @@ function mouseReleased() {
 }
 
 const restart = async () =>
-  await removeConstellation("api/constellation").then(
-    (isSuccess) => {
-      if (isSuccess) {
-        dots = [];
-        apuntes.innerHTML = "";
-        ephemeralText.innerHTML = "";
-        arrow.style.display = "none";
-        closeModal();
-      }
+  await removeConstellation("api/constellation").then((isSuccess) => {
+    if (isSuccess) {
+      dots = [];
+      apuntes.innerHTML = "";
+      ephemeralText.innerHTML = "";
+      arrow.style.display = "none";
+      closeModal();
     }
-  );
+  });
 
 const introSteps = [
   {
