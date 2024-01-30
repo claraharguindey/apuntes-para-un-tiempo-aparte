@@ -12,6 +12,10 @@ const corsOptions = {
 };
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.resolve(__dirname, "../client")));
+
 app.use(helmet());
 app.disable("x-powered-by");
 
@@ -36,6 +40,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client", "index.html"));
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../client", "404.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../client", "404.html"));
+// });
