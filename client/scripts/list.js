@@ -41,7 +41,7 @@ table.innerHTML = filtered
           <td>${item.title}</td>
           ${
             item.fullText
-              ? `<td class="table-button" onclick="displayFullText('${item.id}')" id="${item.id}button">Ver texto completo</td>`
+              ? `<td class="table-button" id="${item.id}button">Ver texto completo</td>`
               : ""
           }
         </tr>
@@ -59,3 +59,10 @@ table.innerHTML = filtered
       }`
   )
   .join("");
+
+filtered.map((item) => {
+  const buttonCell = document.getElementById(`${item.id}button`);
+  if (item.fullText) {
+    buttonCell.addEventListener("click", () => displayFullText(item.id));
+  }
+});
