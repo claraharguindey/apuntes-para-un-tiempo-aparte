@@ -1,5 +1,5 @@
 const fetchConstellation = (action) =>
-  fetch("http://localhost:3000/constellation")
+  fetch("api/constellation")
     .then((response) => response.json())
     .then((data) => action(data));
 

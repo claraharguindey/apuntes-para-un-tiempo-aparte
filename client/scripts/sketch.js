@@ -184,7 +184,7 @@ function mouseReleased() {
 }
 
 const restart = async () =>
-  await removeConstellation("http://localhost:3000/constellation").then(
+  await removeConstellation("api/constellation").then(
     (isSuccess) => {
       if (isSuccess) {
         dots = [];
@@ -285,7 +285,7 @@ async function playIntro() {
 }
 
 const addNode = (dot) =>
-  saveNode("http://localhost:3000/node", {
+  saveNode("api/node", {
     ...dot,
     text: textToSave,
     figure: figureId,

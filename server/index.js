@@ -1,11 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const helmet = require("helmet");
-const addNewNode = require("./routes/node");
-const {
-  getConstellation,
-  removeConstellation,
-} = require("./routes/constellation");
+const constellationRouter = require("./routes/constellation");
 
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
@@ -21,9 +18,7 @@ app.disable("x-powered-by");
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.post("/node", addNewNode);
-app.get("/constellation", getConstellation);
-app.delete("/constellation", removeConstellation);
+app.use("/api", constellationRouter);
 
 app.listen(PORT, (err) => {
   if (err) {
@@ -31,4 +26,16 @@ app.listen(PORT, (err) => {
   } else {
     console.log(`Server is running on port ${PORT} ✨`);
   }
+});
+
+app.get("/list", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../client", "list.html"));
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../client", "index.html"));
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../client", "404.html"));
 });
