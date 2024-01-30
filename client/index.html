@@ -17,8 +17,8 @@
                 rel="noopener noreferrer">Apuntes para un tiempo aparte</a></h1>
         <nav>
             <ul>
-                <li class="list-item"><button onclick="openModal()" class="list-item-link">Reiniciar</button></li>
-                <li class="list-item"><a class="list-item-link" href="list">Figuras</a></li>
+                <li class="list-item"><button onclick="openModal(event)" class="list-item-link">Reiniciar</button></li>
+                <li class="list-item"><a class="list-item-link" href="list" onclick="navigate(event)">Figuras</a></li>
             </ul>
         </nav>
     </header>
@@ -37,6 +37,8 @@
         <div id="ephemeral" class="ephemeralWrapper"></div>
         <div id="intro" class="intro"></div>
         <div id="arrow" class="scroll-down-arrow"></div>
+        <!-- <div id="canvas-cover" onclick="updateContent()"
+          style="display: block; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;"></div> -->
     </main>
     <a href="list" id="figuresLink" class="home-hands-wrapper">
         <img src="assets/media/hands/1.jpeg" alt="hands playing catscraddle" id="catscraddle" class="home-hands">

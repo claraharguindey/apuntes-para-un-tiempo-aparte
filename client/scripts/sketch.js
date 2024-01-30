@@ -171,8 +171,16 @@ function setPosition() {
   currentPos.y = mouseY;
 }
 
-function mouseReleased() {
-  if (started) {
+function mouseReleased(event) {
+  const tagName = event.target?.tagName?.toLowerCase();
+  const id = event.target?.id;
+  const triggerUpdate =
+    isLooping() &&
+    tagName !== "button" &&
+    tagName !== "a" &&
+    id !== "catscraddle";
+
+  if (started && triggerUpdate) {
     setPosition();
     dots.push(new Dot(mouseX, mouseY));
     currentIndex++;
@@ -188,6 +196,8 @@ function mouseReleased() {
 const restart = async () =>
   await removeConstellation("api/constellation").then((isSuccess) => {
     if (isSuccess) {
+      loop();
+
       dots = [];
       apuntes.innerHTML = "";
       ephemeralText.innerHTML = "";

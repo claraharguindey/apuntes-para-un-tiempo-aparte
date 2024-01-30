@@ -21,7 +21,7 @@ const shuffledContent = shuffleArray(content);
 let textToSave;
 
 const updateContent = () => {
-  if (started) {
+  if (started && isLooping()) {
     ephemeralText.innerHTML = `<p class="ephemeralText">${shuffledContent[counter].text}</p>`;
     catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
     textToSave = shuffledContent[counter].text;
@@ -48,6 +48,18 @@ const updateContent = () => {
   }
 };
 
-const openModal = () => (modal.style.display = "block");
+const navigate = (e) => {
+  noLoop();
+  e.stopPropagation();
+};
 
-const closeModal = () => (modal.style.display = "none");
+const openModal = (e) => {
+  noLoop();
+  modal.style.display = "block";
+  e.stopPropagation();
+};
+
+const closeModal = () => {
+  modal.style.display = "none";
+  loop();
+};
