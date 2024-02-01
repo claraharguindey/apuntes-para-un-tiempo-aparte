@@ -187,8 +187,8 @@ function mouseReleased(event) {
     lastPos.x = mouseX;
     lastPos.y = mouseY;
     addNode({ x: mouseX, y: mouseY });
-    if (arrow.style.display !== "block") {
-      arrow.style.display = "block";
+    if (arrow.style.display !== "flex") {
+      arrow.style.display = "flex";
     }
   }
 }
@@ -283,12 +283,14 @@ async function playIntro() {
             }
           }
           resolve();
-        }, step.delay || index * 3000);
+        }, step.delay || index * 1000);
       })
   );
+
   setTimeout(() => {
     fetchConstellation(setDots);
   }, (introSteps.length + 1) * 3000);
+
   await Promise.all(promises);
   started = true;
   sessionStorage.setItem("introPlayed", true);
