@@ -3,6 +3,8 @@ const apuntes = document.getElementById("apuntes");
 const ephemeralText = document.getElementById("ephemeral");
 const figuresLink = document.getElementById("figuresLink");
 const modal = document.getElementById("modal");
+const arrow = document.getElementById("arrow");
+
 let image;
 let credits;
 let figureId;
@@ -63,3 +65,7 @@ const closeModal = () => {
   modal.style.display = "none";
   loop();
 };
+
+window.addEventListener("scroll", () => {
+  arrow.style.display = "none";
+});

@@ -1,7 +1,6 @@
 const intro = document.getElementById("intro");
 const header = document.getElementById("header");
 const apuntesWrapper = document.getElementById("apuntesWrapper");
-const arrow = document.getElementById("arrow");
 
 let dots = [];
 let currentIndex = 0;
