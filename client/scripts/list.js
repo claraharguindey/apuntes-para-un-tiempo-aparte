@@ -1,5 +1,5 @@
 const table = document.getElementById("table");
-
+const isMobile = window.innerWidth <= 600;
 const ids = content.map(({ author }) => author);
 
 const filtered = content
@@ -19,10 +19,15 @@ const filtered = content
 const displayFullText = (id) => {
   document.getElementById(`${id}Text`).classList.toggle("table-accordion-body");
   document.getElementById(`${id}Row`).classList.toggle("openRow");
-  document.getElementById(`${id}button`).innerText =
-    document.getElementById(`${id}button`).innerText === "Ver texto completo"
-      ? "Cerrar"
-      : "Ver texto completo";
+  if (!isMobile) {
+    document.getElementById(`${id}button`).innerText =
+      document.getElementById(`${id}button`).innerText === "Ver texto completo"
+        ? "Cerrar"
+        : "Ver texto completo";
+  } else {
+    document.getElementById(`${id}button`).innerText =
+      document.getElementById(`${id}button`).innerText === "+" ? "-" : "+";
+  }
 };
 
 table.innerHTML = filtered
@@ -41,7 +46,9 @@ table.innerHTML = filtered
           <td>${item.title}</td>
           ${
             item.fullText
-              ? `<td class="table-button" id="${item.id}button">Ver texto completo</td>`
+              ? `<td class="table-button" id="${item.id}button">${
+                  isMobile ? "+" : "Ver texto completo"
+                }</td>`
               : ""
           }
         </tr>
