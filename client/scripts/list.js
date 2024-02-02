@@ -33,7 +33,7 @@ table.innerHTML = filtered
           <td class="table-image-cell">
             <img src='./../assets/media/hands/${
               item.figure
-            }.jpeg' alt='hands playing catscraddle' class="table-image">
+            }.jpg' alt='hands playing catscraddle' class="table-image">
           </td>
           <td class="table-author">
             <a>${item.author}</a>

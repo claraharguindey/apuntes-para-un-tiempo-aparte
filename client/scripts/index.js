@@ -25,7 +25,7 @@ let textToSave;
 const updateContent = () => {
   if (started && isLooping()) {
     ephemeralText.innerHTML = `<p class="ephemeralText">${shuffledContent[counter].text}</p>`;
-    catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpeg`;
+    catscraddle.src = `./assets/media/hands/${shuffledContent[counter].figure}.jpg`;
     textToSave = shuffledContent[counter].text;
     apuntes.innerHTML += ` ${textToSave}`;
     image = shuffledContent[counter].image;

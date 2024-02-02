@@ -48,7 +48,7 @@ const setDots = (nodes) => {
       dots.push(new Dot(node.x, node.y));
       dots[dots.length - 1].plot();
       if (node.figure) {
-        catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
+        catscraddle.src = `./assets/media/hands/${node.figure}.jpg`;
         figuresLink.href = `/list#${node.figure}`;
         figuresLink.onclick = "navigate(event)";
       }
@@ -85,7 +85,7 @@ const setDots = (nodes) => {
         currentIndex++;
 
         if (node.figure) {
-          catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
+          catscraddle.src = `./assets/media/hands/${node.figure}.jpg`;
           figuresLink.href = `/list#${node.figure}`;
           figuresLink.onclick = "navigate(event)";
         }
@@ -215,48 +215,48 @@ const restart = async () =>
 const introSteps = [
   {
     text: "Aquí recogemos momentos",
-    src: "./assets/media/intro/1.jpeg",
+    src: "./assets/media/intro/1.jpg",
     position: { x: 426, y: 415 },
   },
   {
     text: "que tuvieron lugar",
-    src: "./assets/media/intro/2.jpeg",
+    src: "./assets/media/intro/2.jpg",
     position: { x: 622, y: 371 },
     delay: 3000,
   },
   {
     text: "en un tiempo aparte.",
-    src: "./assets/media/intro/3.jpeg",
+    src: "./assets/media/intro/3.jpg",
     position: { x: 715, y: 428 },
     delay: 6000,
   },
   {
     text: "De forma colectiva e infinita",
-    src: "./assets/media/intro/4.jpeg",
+    src: "./assets/media/intro/4.jpg",
     position: { x: 830, y: 376 },
     delay: 9000,
   },
   {
     text: "dibujamos una línea del tiempo",
-    src: "./assets/media/intro/5.jpeg",
+    src: "./assets/media/intro/5.jpg",
     position: { x: 851, y: 400 },
     delay: 12000,
   },
   {
     text: "que se ha vuelto constelación",
-    src: "./assets/media/intro/6.jpeg",
+    src: "./assets/media/intro/6.jpg",
     position: { x: 715, y: 428 },
     delay: 15000,
   },
   {
     text: "para pensar y rehacer",
-    src: "./assets/media/intro/7.jpeg",
+    src: "./assets/media/intro/7.jpg",
     position: { x: 735, y: 468 },
     delay: 18000,
   },
   {
     text: "Apuntes para un tiempo aparte.",
-    src: "./assets/media/intro/1.jpeg",
+    src: "./assets/media/intro/1.jpg",
     position: { x: 735, y: 468 },
     customPosition: true,
     delay: 21000,
