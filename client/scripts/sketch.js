@@ -10,6 +10,10 @@ let dotSize = 8;
 const savedDots = [];
 let started = false;
 
+const FETCH_NODES_TIMEOUT = 24000;
+const DASH_LENGHT = 2;
+const GAP_LENGTH = 5;
+
 class Dot {
   constructor(x, y) {
     this.x = x;
@@ -18,7 +22,7 @@ class Dot {
 
   connect(px, py) {
     stroke(255, 255, 255);
-    drawingContext.setLineDash([2, 5]);
+    drawingContext.setLineDash([DASH_LENGHT, GAP_LENGTH]);
     line(this.x, this.y, px, py);
   }
 
@@ -153,7 +157,7 @@ function draw() {
   } else {
     stroke(255, 255, 255);
     strokeWeight(1);
-    drawingContext.setLineDash([2, 5]);
+    drawingContext.setLineDash([DASH_LENGHT, GAP_LENGTH]);
     line(lastPos.x, lastPos.y, currentPos.x, currentPos.y);
   }
 }
@@ -243,7 +247,7 @@ async function playIntro() {
 
   setTimeout(() => {
     fetchConstellation(setDots);
-  }, 24000);
+  }, FETCH_NODES_TIMEOUT);
 
   await Promise.all(promises);
   started = true;
