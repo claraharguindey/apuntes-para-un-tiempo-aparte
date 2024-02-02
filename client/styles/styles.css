@@ -53,7 +53,7 @@ ul {
 }
 
 .fadeIn {
-  animation: fadeIn 26s linear forwards;
+  animation: fadeIn 24s linear forwards;
 }
 
 .ephemeralWrapper,
@@ -68,11 +68,11 @@ ul {
   text-decoration: underline;
   position: fixed;
   top: 56px;
-  animation: fadeOut 5s linear forwards;
+  animation: fadeOut 3s linear forwards;
 }
 
 .ephemeralText {
-  animation: fadeOut 10s linear forwards;
+  animation: fadeOut 3s linear forwards;
   font-size: 16px;
   margin-top: 12px;
   max-width: 20%;

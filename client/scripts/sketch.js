@@ -237,7 +237,7 @@ async function playIntro() {
             }
           }
           resolve();
-        }, step.delay || index * 1000);
+        }, step.delay || index * 3000);
       })
   );
 
