@@ -36,12 +36,13 @@ class Dot {
 }
 
 const setDots = (nodes) => {
-  if(nodes.length) {
+  if (nodes.length) {
     if (arrow.style.display !== "flex") {
       arrow.style.display = "flex";
       apuntesWrapper.style.display = "flex";
     }
   }
+
   nodes.forEach((node, i) => {
     if (i < nodes.length - 5) {
       dots.push(new Dot(node.x, node.y));
@@ -79,6 +80,9 @@ const setDots = (nodes) => {
       setTimeout(() => {
         dots.push(new Dot(node.x, node.y));
         dots[dots.length - 1].plot();
+        lastPos.x = node.x;
+        lastPos.y = node.y;
+        currentIndex++;
 
         if (node.figure) {
           catscraddle.src = `./assets/media/hands/${node.figure}.jpeg`;
@@ -116,19 +120,14 @@ const setDots = (nodes) => {
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
+
   if (started) {
     canvas.mousePressed(setPosition);
   }
 
-  setPosition();
-  dots.push(new Dot(308, 332));
-
   const introPlayed = sessionStorage.getItem("introPlayed");
 
   if (introPlayed === "true") {
-    lastPos.x = 308;
-    lastPos.y = 332;
-    currentIndex++;
     apuntesWrapper.style.display = "flex";
     header.style.animation = "none";
     started = true;
@@ -152,7 +151,6 @@ function draw() {
   if (currentIndex == 0) {
     fill(255, 255, 255);
     stroke(255, 255, 255);
-    textSize(24);
   } else {
     stroke(255, 255, 255);
     strokeWeight(1);
