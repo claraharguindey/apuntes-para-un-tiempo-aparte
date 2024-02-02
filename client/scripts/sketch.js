@@ -36,6 +36,12 @@ class Dot {
 }
 
 const setDots = (nodes) => {
+  if(nodes.length) {
+    if (arrow.style.display !== "flex") {
+      arrow.style.display = "flex";
+      apuntesWrapper.style.display = "flex";
+    }
+  }
   nodes.forEach((node, i) => {
     if (i < nodes.length - 5) {
       dots.push(new Dot(node.x, node.y));
@@ -123,9 +129,10 @@ function setup() {
     lastPos.x = 308;
     lastPos.y = 332;
     currentIndex++;
-    apuntesWrapper.style.animation = "none";
+    apuntesWrapper.style.display = "flex";
     header.style.animation = "none";
     started = true;
+
     fetchConstellation(setDots);
   } else {
     playIntro();
@@ -188,6 +195,7 @@ function mouseReleased(event) {
     addNode({ x: mouseX, y: mouseY });
     if (arrow.style.display !== "flex") {
       arrow.style.display = "flex";
+      apuntesWrapper.style.display = "flex";
     }
   }
 }
@@ -198,6 +206,7 @@ const restart = async () =>
       loop();
 
       dots = [];
+      apuntesWrapper.style.display = "none";
       apuntes.innerHTML = "";
       ephemeralText.innerHTML = "";
       arrow.style.display = "none";
