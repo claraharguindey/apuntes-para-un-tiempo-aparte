@@ -159,7 +159,6 @@ figure {
   animation: fade_move_down 4s ease-in-out infinite;
 }
 
-
 .scroll-down-arrow {
   display: block;
   text-align: center;
@@ -400,7 +399,61 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-  table {
+  header {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+  }
+
+  h1 {
     font-size: 16px;
+  }
+
+  .apuntes {
+    column-count: 1;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .list-article {
+    padding: 12px;
+    margin-top: 72px;
+  }
+ 
+  .list-item-link {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .table-image {
+    width: 48px;
+  }
+  
+  .table-button {
+    display: none;
+  }
+
+  .table-image-cell {
+    padding: 12px;
+    padding-right: 8px;
+  }
+
+  .table-author {
+    padding: 8px;
+  }
+
+  .table-full-text {
+    padding: 12px;
+  }
+
+  .footer-logo {
+    width: 200px;
+    margin:12px;
   }
 }

@@ -62,7 +62,12 @@ table.innerHTML = filtered
 
 filtered.map((item) => {
   const buttonCell = document.getElementById(`${item.id}button`);
+  const row = document.getElementById(`${item.id}Row`);
   if (item.fullText) {
-    buttonCell.addEventListener("click", () => displayFullText(item.id));
+    buttonCell.addEventListener("click", (event) => {
+      event.stopPropagation();
+      displayFullText(item.id);
+    });
+    row.addEventListener("click", () => displayFullText(item.id));
   }
 });
