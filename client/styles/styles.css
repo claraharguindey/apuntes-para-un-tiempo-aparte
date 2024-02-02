@@ -410,6 +410,24 @@ table {
     font-size: 16px;
   }
 
+  .home-hands-wrapper {
+    margin-left: 12px;
+  }
+
+  .home-hands {
+    width: 80px;
+    height: 80px;
+  }
+
+  .introText {
+    top: 148px;
+  }
+
+  .ephemeralText {
+    max-width: 80%;
+    top: 148px;
+  }
+
   .apuntes {
     column-count: 1;
   }

@@ -243,7 +243,7 @@ async function playIntro() {
 
   setTimeout(() => {
     fetchConstellation(setDots);
-  }, (introSteps.length + 1) * 3000);
+  }, 24000);
 
   await Promise.all(promises);
   started = true;
