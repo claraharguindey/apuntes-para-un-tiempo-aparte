@@ -8,7 +8,7 @@ const arrow = document.getElementById("arrow");
 let image;
 let credits;
 let figureId;
-let counter = 1;
+let counter = 0;
 
 const shuffleArray = (array) => {
   const newArray = [...array];
