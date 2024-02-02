@@ -152,7 +152,7 @@ function mouseReleased(event) {
     updateMousePosition();
     addDot();
     updateLastPosition();
-    if (dots.length === 1) {
+    if (started && dots.length > 0) {
       showElements();
     }
   }
