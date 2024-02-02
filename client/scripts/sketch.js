@@ -128,7 +128,6 @@ function setup() {
   const introPlayed = sessionStorage.getItem("introPlayed");
 
   if (introPlayed === "true") {
-    apuntesWrapper.style.display = "flex";
     header.style.animation = "none";
     started = true;
 
@@ -211,57 +210,6 @@ const restart = async () =>
       closeModal();
     }
   });
-
-const introSteps = [
-  {
-    text: "Aquí recogemos momentos",
-    src: "./assets/media/intro/1.jpg",
-    position: { x: 426, y: 415 },
-  },
-  {
-    text: "que tuvieron lugar",
-    src: "./assets/media/intro/2.jpg",
-    position: { x: 622, y: 371 },
-    delay: 3000,
-  },
-  {
-    text: "en un tiempo aparte.",
-    src: "./assets/media/intro/3.jpg",
-    position: { x: 715, y: 428 },
-    delay: 6000,
-  },
-  {
-    text: "De forma colectiva e infinita",
-    src: "./assets/media/intro/4.jpg",
-    position: { x: 830, y: 376 },
-    delay: 9000,
-  },
-  {
-    text: "dibujamos una línea del tiempo",
-    src: "./assets/media/intro/5.jpg",
-    position: { x: 851, y: 400 },
-    delay: 12000,
-  },
-  {
-    text: "que se ha vuelto constelación",
-    src: "./assets/media/intro/6.jpg",
-    position: { x: 715, y: 428 },
-    delay: 15000,
-  },
-  {
-    text: "para pensar y rehacer",
-    src: "./assets/media/intro/7.jpg",
-    position: { x: 735, y: 468 },
-    delay: 18000,
-  },
-  {
-    text: "Apuntes para un tiempo aparte.",
-    src: "./assets/media/intro/1.jpg",
-    position: { x: 735, y: 468 },
-    customPosition: true,
-    delay: 21000,
-  },
-];
 
 async function playIntro() {
   const promises = introSteps.map(
