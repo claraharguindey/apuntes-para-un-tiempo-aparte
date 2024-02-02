@@ -34,7 +34,7 @@ const updateContent = () => {
       apuntes.innerHTML += `<figure>
         <img src="./assets/media/images/${image}" alt="Imagen del evento" />
         <figcaption>
-          <span class="caption">${credits ? `Crédito: ${credits}` : ""}</span>
+          <span class="caption">${credits ? `> Crédito: ${credits}` : ""}</span>
         </figcaption>
       </figure>`;
     }

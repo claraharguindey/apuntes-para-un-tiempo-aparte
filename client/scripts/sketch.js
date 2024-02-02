@@ -64,7 +64,7 @@ const setDots = (nodes) => {
           }" alt="Imagen del evento" />
           <figcaption>
             <span class="caption">${
-              node?.credits ? `Crédito: ${node.credits}` : ""
+              node?.credits ? `> Crédito: ${node.credits}` : ""
             }</span>
           </figcaption>
         </figure>`;
@@ -101,7 +101,7 @@ const setDots = (nodes) => {
             }" alt="Imagen del evento" />
             <figcaption>
               <span class="caption">${
-                node?.credits ? `Crédito: ${node.credits}` : ""
+                node?.credits ? `> Crédito: ${node.credits}` : ""
               }</span>
             </figcaption>
           </figure>`;
